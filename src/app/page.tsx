@@ -120,6 +120,23 @@ export default function Home() {
               <span>Clean Geometric Paths</span> • <span>Gradient Defs</span> • <span>Pixel-Grid Aligned</span> • <span>Scalable 16px – 128px+</span>
             </div>
           </div>
+          <div className="footer-signature">
+            <span className="footer-made-by">Designed &amp; built by</span>
+            <a
+              href="https://thucde.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-brand-link"
+              aria-label="Visit thucde.dev"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/thucdedev-banner.png"
+                alt="thucde.dev"
+                className="footer-brand-logo"
+              />
+            </a>
+          </div>
         </footer>
       </div>
 

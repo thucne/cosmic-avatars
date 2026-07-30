@@ -870,6 +870,44 @@ body {
   opacity: 0.7;
 }
 
+.footer-signature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-made-by {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+.footer-brand-link {
+  display: inline-flex;
+  align-items: center;
+  opacity: 0.75;
+  transition: opacity 0.2s ease, transform 0.2s ease, filter 0.2s ease;
+  filter: invert(1) brightness(0.85);
+}
+
+.footer-brand-link:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+  filter: invert(1) brightness(1.1);
+}
+
+.footer-brand-logo {
+  height: 28px;
+  width: auto;
+  display: block;
+}
+
 /* Modal */
 .modal-overlay {
   position: fixed;
