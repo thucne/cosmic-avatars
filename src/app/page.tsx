@@ -121,7 +121,7 @@ export default function Home() {
             </div>
           </div>
           <div className="footer-signature">
-            <span className="footer-made-by">Designed &amp; built by</span>
+            <span className="footer-made-by">By</span>
             <a
               href="https://thucde.dev"
               target="_blank"
