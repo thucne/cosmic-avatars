@@ -891,19 +891,19 @@ body {
 .footer-brand-link {
   display: inline-flex;
   align-items: center;
-  opacity: 0.75;
-  transition: opacity 0.2s ease, transform 0.2s ease, filter 0.2s ease;
-  filter: invert(1) brightness(0.85);
+  opacity: 0.8;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  filter: invert(1);
+  mix-blend-mode: screen;
 }
 
 .footer-brand-link:hover {
   opacity: 1;
   transform: translateY(-1px);
-  filter: invert(1) brightness(1.1);
 }
 
 .footer-brand-logo {
-  height: 28px;
+  height: 32px;
   width: auto;
   display: block;
 }
