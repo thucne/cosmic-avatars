@@ -20,7 +20,7 @@ const firaCode = Fira_Code({
   display: 'swap',
 });
 
-const APP_URL = 'https://cosmic-avatars.thucde.dev';
+const APP_URL = 'https://cosmic-avatars.a302.link';
 const TITLE = 'Cosmic Avatars — 64 Vector Space SVG Icons & Avatar Generator';
 const DESCRIPTION =
   'A cohesive library of 64 pixel-perfect vector space SVG icons (planets, nebulae, black holes, spacecraft, UFOs) with a deterministic user avatar generator. Copy as Raw SVG, React JSX, Data URI, or HTML. Zero server load.';
@@ -83,7 +83,15 @@ export const metadata: Metadata = {
     images: ['/og-image.jpg'],
   },
   icons: {
-    icon: '/favicon.ico',
+    icon: [
+      { url: '/favicon-16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '512x512', type: 'image/png' },
+    ],
+    shortcut: '/favicon-32.png',
   },
   category: 'technology',
 };
