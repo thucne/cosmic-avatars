@@ -12,18 +12,19 @@
 
 ## 🌌 Overview
 
-**Cosmic Avatars** is a cohesive, open-source library of **97 pixel-perfect vector space SVG icons** and a **Deterministic User Avatar Generator**. Built for modern web applications, user dashboards, gaming platforms, and developer tools, it enables instant client-side generation of millions of unique, reproducible space avatars from any seed string (username, email, or user ID).
+**Cosmic Avatars** is a cohesive, open-source library of **134 pixel-perfect vector space SVG icons** and a **Deterministic User Avatar Generator**. Built for modern web applications, user dashboards, gaming platforms, and developer tools, it enables instant client-side generation of millions of unique, reproducible space avatars from any seed string (username, email, or user ID).
 
 ---
 
 ## ✨ Features
 
-- 🪐 **97 Hand-Crafted 32×32 Vector Icons**: Organized into 4 celestial categories:
-  - **Solar System & Stars** (Sun, Mercury, Venus, Earth & Moon, Mars, Jupiter, Saturn, Black Holes, White Dwarfs, Pulsars)
-  - **Deep Sky & Galaxies** (Spiral Galaxy, Elliptical Galaxy, Sombrero Galaxy, Quasar Core, Emission Nebula, Wormhole)
-  - **Spacecraft & Tech** (Space Shuttle, Voyager Probe, Solar Sail, ISS Station, Space Elevator, Mars Rover)
-  - **UFOs & Constellations** (Classic Saucer, TR-3B, Alien Mothership, Big Dipper, Orion, Monolith, Stargate)
-- 🎲 **Deterministic Avatar Generator**: Uses an FNV-1a non-cryptographic hashing algorithm to map user seeds to 2,688 core composite avatar signatures (64,000+ styled variations with frame geometry & theme glow controls) with zero server load.
+- 🪐 **134 Hand-Crafted 32×32 Vector Icons**: Organized into 5 celestial categories:
+  - **Solar System & Planetary** (Sun, Mercury, Venus, Earth & Moon, Mars, Jupiter, Saturn, Comets, Asteroids)
+  - **Deep Sky & Galaxies** (Spiral Galaxy, Elliptical Galaxy, Hoag's Object, Cartwheel Galaxy, Quasars, Nebulae)
+  - **Stellar & Celestial Stars** (Red Giant, Neutron Star, Pulsar, Supernova, Magnetar, Variable Stars)
+  - **Spacecraft & Technology** (Space Shuttle, Voyager Probe, Solar Sail, ISS Station, Space Elevator, Mars Rover)
+  - **Cosmic Mysteries & Anomalies** (Black Hole, Event Horizon, Wormhole, Singularity, Dyson Sphere, Cosmic Strings)
+- 🎲 **Deterministic Avatar Generator**: Uses an FNV-1a non-cryptographic hashing algorithm to map user seeds to 5,628 core composite avatar signatures (90,000+ styled variations with frame geometry & theme glow controls) with zero server load.
 - 🎨 **Cosmic Frame & Theme Customizer**:
   - **Frame Shapes**: Circle, Squircle, Hexagon, and Raw SVG.
   - **Theme Glows**: Dark Void, Quantum Cyan, Nebula Purple, Plasma Pink, Supernova Gold, Aurora Emerald.

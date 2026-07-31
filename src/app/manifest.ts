@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: 'Cosmic Avatars — Deterministic Space SVG Icon Studio',
     short_name: 'Cosmic Avatars',
     description:
-      'A cohesive library of 97 vector space SVG icons and deterministic seed avatar generator for web applications.',
+      'A cohesive library of 134 vector space SVG icons and deterministic seed avatar generator for web applications.',
     start_url: '/',
     display: 'standalone',
     background_color: '#060814',

@@ -22,9 +22,9 @@ const firaCode = Fira_Code({
 });
 
 const APP_URL = 'https://cosmic-avatars.a302.link';
-const TITLE = 'Cosmic Avatars — 138 Natural Space SVG Icons & Avatar Generator';
+const TITLE = 'Cosmic Avatars — 134 Natural Space SVG Icons & Avatar Generator';
 const DESCRIPTION =
-  'A hand-crafted library of 138 pixel-perfect natural space SVG icons — comets, nebulae, galactic phenomena, stellar bow shocks, supernovae — with a deterministic seed avatar generator for React, Next.js, and modern web apps. Zero server load.';
+  'A hand-crafted library of 134 pixel-perfect natural space SVG icons — comets, nebulae, galactic phenomena, stellar bow shocks, supernovae — with a deterministic seed avatar generator for React, Next.js, and modern web apps. Zero server load.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(APP_URL),

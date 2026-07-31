@@ -11,7 +11,7 @@ const FAQS: FaqItem[] = [
   {
     question: 'What is Cosmic Avatars and how is it different from other avatar makers?',
     answer:
-      'Cosmic Avatars is a specialized developer tool and open-source library featuring 97 vector space SVG icons and a client-side deterministic seed avatar generator. Unlike standard portrait avatar builders or random avatar tools, Cosmic Avatars converts string seeds (like usernames or emails) into reproducible, sci-fi vector space icons with zero server latency.',
+      'Cosmic Avatars is a specialized developer tool and open-source library featuring 134 vector space SVG icons and a client-side deterministic seed avatar generator. Unlike standard portrait avatar builders or random avatar tools, Cosmic Avatars converts string seeds (like usernames or emails) into reproducible, sci-fi vector space icons with zero server latency.',
   },
   {
     question: 'How does the FNV-1a deterministic hash generator work?',
@@ -31,7 +31,7 @@ const FAQS: FaqItem[] = [
   {
     question: 'What code export formats are available for developers and designers?',
     answer:
-      'You can export individual avatars or icons in four instant formats: Raw inline SVG XML, ready-to-use React TypeScript JSX components, Base64 Data URIs (for CSS background images), and standard HTML <img> tags. Furthermore, you can download all 97 icons as a ZIP archive or copy a single SVG Sprite Sheet.',
+      'You can export individual avatars or icons in four instant formats: Raw inline SVG XML, ready-to-use React TypeScript JSX components, Base64 Data URIs (for CSS background images), and standard HTML <img> tags. Furthermore, you can download all 134 icons as a ZIP archive or copy a single SVG Sprite Sheet.',
   },
 ];
 
@@ -63,17 +63,17 @@ export const SeoShowcase: React.FC = () => {
             <div className="seo-card-icon">⚡</div>
             <h3>Deterministic FNV-1a Hashing</h3>
             <p>
-              Generate <strong>4,074 core seed signatures</strong> (64,000+ styled variations) from user IDs, emails, or wallet addresses. 
+              Generate <strong>5,628 core seed signatures</strong> (90,000+ styled variations) from user IDs, emails, or wallet addresses. 
               Zero server load, zero database storage, and instant rendering.
             </p>
           </article>
 
           <article className="seo-card">
             <div className="seo-card-icon">🪐</div>
-            <h3>97 Hand-Crafted Vector Icons</h3>
+            <h3>134 Hand-Crafted Vector Icons</h3>
             <p>
-              Pixel-grid aligned 32×32 SVG icons across 4 categories: <em>Solar System & Stars</em>, 
-              <em>Deep Sky & Galaxies</em>, <em>Spacecraft & Tech</em>, and <em>UFOs & Constellations</em>.
+              Pixel-grid aligned 32×32 SVG icons across 5 categories: <em>Solar System & Planetary</em>, 
+              <em>Deep Sky & Galaxies</em>, <em>Stellar & Celestial Stars</em>, <em>Spacecraft & Technology</em>, and <em>Cosmic Mysteries & Anomalies</em>.
             </p>
           </article>
 
@@ -115,7 +115,7 @@ export const SeoShowcase: React.FC = () => {
                 </tr>
                 <tr>
                   <td><strong>Combinations</strong></td>
-                  <td>4,074 Base (64,000+ Styles)</td>
+                  <td>5,628 Base (90,000+ Styles)</td>
                   <td>~1 Million combinations</td>
                   <td>Depends on User Upload</td>
                 </tr>
