@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Outfit, Fira_Code } from 'next/font/google';
 import './globals.css';
+import { SeoStructuredData } from '../components/SeoStructuredData';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -21,28 +22,37 @@ const firaCode = Fira_Code({
 });
 
 const APP_URL = 'https://cosmic-avatars.a302.link';
-const TITLE = 'Cosmic Avatars — 64 Vector Space SVG Icons & Avatar Generator';
+const TITLE = 'Cosmic Avatars — Deterministic Space SVG Icon Studio & Avatar Generator';
 const DESCRIPTION =
-  'A cohesive library of 64 pixel-perfect vector space SVG icons (planets, nebulae, black holes, spacecraft, UFOs) with a deterministic user avatar generator. Copy as Raw SVG, React JSX, Data URI, or HTML. Zero server load.';
+  'A cohesive open-source library of 84 pixel-perfect vector space SVG icons (planets, nebulae, black holes, spacecraft, UFOs) with a deterministic seed avatar generator for React, Next.js, and modern web apps. Zero server load.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(APP_URL),
-  title: TITLE,
+  title: {
+    default: TITLE,
+    template: '%s | Cosmic Avatars',
+  },
   description: DESCRIPTION,
+  alternates: {
+    canonical: '/',
+  },
   keywords: [
+    'cosmic avatars',
     'space svg icons',
     'avatar generator',
-    'deterministic avatar',
-    'svg icon library',
-    'planet icons',
-    'spacecraft icons',
-    'nebula svg',
-    'black hole icon',
+    'deterministic avatar generator',
+    'fnv-1a hash avatar generator',
+    'space avatar generator',
     'react svg icons',
-    'user avatar',
-    'cosmic icons',
+    'identicon generator',
+    'gravatar space alternative',
+    'open source space icons',
+    'planet icons svg',
+    'spacecraft vector icon',
+    'black hole svg',
+    'nebula icon library',
+    'svg sprite generator',
     'space design system',
-    'open source icons',
     'thucde.dev',
   ],
   authors: [{ name: 'thucde.dev', url: 'https://thucde.dev' }],
@@ -56,6 +66,7 @@ export const metadata: Metadata = {
       follow: true,
       'max-image-preview': 'large',
       'max-snippet': -1,
+      'max-video-preview': -1,
     },
   },
   openGraph: {
@@ -70,7 +81,7 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Cosmic Avatars — 64 Vector Space SVG Icons & Avatar Generator',
+        alt: 'Cosmic Avatars — Deterministic Space SVG Icon Studio & Avatar Generator',
         type: 'image/jpeg',
       },
     ],
@@ -103,6 +114,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${outfit.variable} ${firaCode.variable}`}>
+      <head>
+        <SeoStructuredData />
+      </head>
       <body>{children}</body>
     </html>
   );

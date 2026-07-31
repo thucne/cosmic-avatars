@@ -151,6 +151,46 @@ export const SPACE_ICONS: SpaceIcon[] = [
     tags: ['pluto', 'charon', 'dwarf planet', 'kuiper', 'heart', 'tombaugh'],
     svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="pluto-grad" cx="13" cy="12" r="12" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FED7AA"/><stop offset="50%" stop-color="#C2410C"/><stop offset="85%" stop-color="#7C2D12"/><stop offset="100%" stop-color="#361309"/></radialGradient></defs><circle cx="15" cy="17" r="10" fill="url(#pluto-grad)"/><path d="M13 14c-1.5-1.5-3.5-1-4.2.5s.2 3.5 2.2 5.5c1.5 1.5 3 2.5 4 3 1-.5 2.5-1.5 4-3 2-2 2.9-4 2.2-5.5s-2.7-2-4.2-.5c-.8.8-1.4 1.5-2 2-.6-.5-1.2-1.2-2-2z" fill="#FEE2E2" opacity="0.85"/><circle cx="26" cy="7" r="2.8" fill="#94A3B8" stroke="#475569" stroke-width="0.6"/></svg>`
   },
+  {
+    id: 'dyson-sphere',
+    name: 'Dyson Swarm Sphere',
+    category: 'solar-system',
+    path: '/svgs/solar-system/dyson-sphere.svg',
+    tags: ['dyson sphere', 'dyson swarm', 'star harness', 'mega structure', 'solar panels', 'kardashev'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="dyson-star" cx="16" cy="16" r="6" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="50%" stop-color="#FDE047"/><stop offset="100%" stop-color="#F97316"/></radialGradient></defs><ellipse cx="16" cy="16" rx="14" ry="5" stroke="#38BDF8" stroke-width="0.8" fill="none" transform="rotate(30 16 16)"/><ellipse cx="16" cy="16" rx="14" ry="5" stroke="#00F0FF" stroke-width="0.8" fill="none" transform="rotate(-30 16 16)"/><ellipse cx="16" cy="16" rx="14" ry="5" stroke="#EC4899" stroke-width="0.8" fill="none" transform="rotate(90 16 16)"/><rect x="3" y="14" width="2" height="4" rx="0.5" fill="#38BDF8" transform="rotate(30 4 16)"/><rect x="27" y="14" width="2" height="4" rx="0.5" fill="#38BDF8" transform="rotate(30 28 16)"/><rect x="15" y="2" width="2" height="4" rx="0.5" fill="#00F0FF" transform="rotate(-30 16 4)"/><rect x="15" y="26" width="2" height="4" rx="0.5" fill="#00F0FF" transform="rotate(-30 16 28)"/><circle cx="16" cy="16" r="5" fill="url(#dyson-star)"/></svg>`
+  },
+  {
+    id: 'hypergiant-uyscuti',
+    name: 'Hypergiant UY Scuti',
+    category: 'solar-system',
+    path: '/svgs/solar-system/hypergiant-uyscuti.svg',
+    tags: ['hypergiant', 'uy scuti', 'massive star', 'colossal', 'red star', 'supergiant'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="uy-core" cx="16" cy="16" r="14" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FEF08A"/><stop offset="30%" stop-color="#F97316"/><stop offset="70%" stop-color="#DC2626"/><stop offset="100%" stop-color="#450A0A"/></radialGradient></defs><circle cx="16" cy="16" r="15" fill="url(#uy-core)"/><circle cx="16" cy="16" r="15" stroke="#EF4444" stroke-width="0.8" stroke-dasharray="2 2"/><path d="M7 11c3-2 7-2 10 0s4 4 2 7-6 4-9 2" stroke="#FDE047" stroke-width="0.8" opacity="0.6"/><path d="M14 20c3 1 7 0 9-2" stroke="#FEF2F2" stroke-width="0.8" opacity="0.5"/><circle cx="27" cy="27" r="1" fill="#FFFFFF" opacity="0.8"/></svg>`
+  },
+  {
+    id: 'binary-star-system',
+    name: 'Binary Star System',
+    category: 'solar-system',
+    path: '/svgs/solar-system/binary-star-system.svg',
+    tags: ['binary star', 'twin stars', 'barycenter', 'stellar orbit', 'gravitational lock'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="star-a" cx="10" cy="16" r="6" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="60%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#1E3A8A"/></radialGradient><radialGradient id="star-b" cx="22" cy="16" r="4.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="60%" stop-color="#F59E0B"/><stop offset="100%" stop-color="#78350F"/></radialGradient></defs><ellipse cx="16" cy="16" rx="13" ry="6" stroke="#94A3B8" stroke-width="0.8" stroke-dasharray="2 2" fill="none" transform="rotate(-15 16 16)"/><circle cx="10" cy="16" r="6.5" fill="url(#star-a)"/><circle cx="22" cy="16" r="4.5" fill="url(#star-b)"/><line x1="10" y1="16" x2="22" y2="16" stroke="#FFFFFF" stroke-width="0.6" stroke-dasharray="1 1" opacity="0.5"/><circle cx="16" cy="16" r="1" fill="#FFFFFF"/></svg>`
+  },
+  {
+    id: 'solar-prominence',
+    name: 'Solar Prominence Arc',
+    category: 'solar-system',
+    path: '/svgs/solar-system/solar-prominence.svg',
+    tags: ['prominence', 'solar flare', 'coronal loop', 'plasma loop', 'magnetic field', 'sun'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="prom-sun" cx="16" cy="28" r="14" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFF5C0"/><stop offset="50%" stop-color="#F97316"/><stop offset="100%" stop-color="#991B1B"/></radialGradient></defs><path d="M2 30A14 14 0 0 1 30 30" fill="url(#prom-sun)"/><path d="M8 24C8 10 24 10 24 24" stroke="#FDE047" stroke-width="2.5" stroke-linecap="round" fill="none"/><path d="M8 24C8 10 24 10 24 24" stroke="#EF4444" stroke-width="1.2" stroke-linecap="round" fill="none"/><path d="M12 24C12 14 20 14 20 24" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.75"/></svg>`
+  },
+  {
+    id: 'planet-eris',
+    name: 'Dwarf Planet Eris',
+    category: 'solar-system',
+    path: '/svgs/solar-system/planet-eris.svg',
+    tags: ['eris', 'dysnomia', 'dwarf planet', 'kuiper belt', 'icy planet', 'scattered disc'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="eris-grad" cx="12" cy="11" r="12" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#F8FAFC"/><stop offset="50%" stop-color="#CBD5E1"/><stop offset="85%" stop-color="#64748B"/><stop offset="100%" stop-color="#1E293B"/></radialGradient></defs><path d="M4 22A16 8 0 0 0 28 10" stroke="#94A3B8" stroke-width="0.6" stroke-dasharray="1.5 1.5" opacity="0.4"/><circle cx="15" cy="16" r="10" fill="url(#eris-grad)"/><circle cx="12" cy="12" r="2" fill="#E2E8F0" opacity="0.6"/><circle cx="18" cy="19" r="2.5" fill="#94A3B8" opacity="0.5"/><circle cx="26" cy="8" r="2" fill="#E2E8F0" stroke="#64748B" stroke-width="0.5"/></svg>`
+  },
 
   // Deep Sky & Cosmic Phenomena (16)
   {
@@ -281,6 +321,54 @@ export const SPACE_ICONS: SpaceIcon[] = [
     tags: ['pillars of creation', 'eagle nebula', 'hubble', 'jwst', 'dust pillars', 'star formation'],
     svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><linearGradient id="pillar-grad" x1="0" y1="32" x2="0" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#0F172A"/><stop offset="40%" stop-color="#78350F"/><stop offset="75%" stop-color="#D97706"/><stop offset="100%" stop-color="#FDE047"/></linearGradient></defs><path d="M2 2c5 2 12-1 18 3 5 4 8 1 10 3v22H2V2z" fill="#312E81" opacity="0.4"/><path d="M6 30V16c0-2 1.5-3.5 3-3s2.5 2 2.5 4v1c1-1.5 2.5-2 4-1s2 3 2 5v8" fill="url(#pillar-grad)"/><path d="M17.5 30V12c0-2 1.5-3.5 3-3s2.5 2 2.5 4v17" fill="url(#pillar-grad)"/><path d="M23 30V19c0-1.5 1-2.5 2-2s2 1.5 2 3v10" fill="url(#pillar-grad)"/><circle cx="9" cy="12" r="1" fill="#FFFFFF"/><circle cx="20.5" cy="8.5" r="1.2" fill="#FDE047"/><circle cx="25" cy="16.5" r="0.9" fill="#67E8F9"/></svg>`
   },
+  {
+    id: 'jwst-deep-field',
+    name: 'JWST Deep Field Cluster',
+    category: 'deep-sky',
+    path: '/svgs/deep-sky/jwst-deep-field.svg',
+    tags: ['jwst', 'deep field', 'gravitational lens', 'infrared', 'smacs 0723', 'gold stars'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><path d="M16 2L18.5 13.5L30 16L18.5 18.5L16 30L13.5 18.5L2 16L13.5 13.5Z" fill="#F59E0B" opacity="0.85"/><path d="M16 6L17.5 14.5L26 16L17.5 17.5L16 26L14.5 17.5L6 16L14.5 14.5Z" fill="#FEF08A"/><path d="M6 22C12 18 20 18 26 22" stroke="#EC4899" stroke-width="1.2" fill="none" opacity="0.7"/><path d="M8 8C14 12 18 12 24 8" stroke="#38BDF8" stroke-width="1" fill="none" opacity="0.7"/><circle cx="7" cy="7" r="1.5" fill="#38BDF8"/><circle cx="25" cy="25" r="1.5" fill="#EC4899"/></svg>`
+  },
+  {
+    id: 'gamma-ray-burst',
+    name: 'Gamma-Ray Burst (GRB)',
+    category: 'deep-sky',
+    path: '/svgs/deep-sky/gamma-ray-burst.svg',
+    tags: ['grb', 'gamma ray burst', 'hypernova', 'beams', 'relativistic', 'extreme energy'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><polygon points="16,16 2,4 6,16 2,28" fill="#EC4899" opacity="0.8"/><polygon points="16,16 30,4 26,16 30,28" fill="#EC4899" opacity="0.8"/><polygon points="16,16 4,7 8,16 4,25" fill="#00F0FF"/><polygon points="16,16 28,7 24,16 28,25" fill="#00F0FF"/><line x1="0" y1="16" x2="32" y2="16" stroke="#FFFFFF" stroke-width="2"/><circle cx="16" cy="16" r="4.5" fill="#FFFFFF"/><circle cx="16" cy="16" r="6" stroke="#FDE047" stroke-width="1"/></svg>`
+  },
+  {
+    id: 'relativistic-jet',
+    name: 'Relativistic Black Hole Jet',
+    category: 'deep-sky',
+    path: '/svgs/deep-sky/relativistic-jet.svg',
+    tags: ['relativistic jet', 'accretion disk', 'quasar', 'black hole jet', 'bipolar jet'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><line x1="16" y1="2" x2="16" y2="30" stroke="#00F0FF" stroke-width="2.5" stroke-linecap="round"/><line x1="16" y1="2" x2="16" y2="30" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round"/><ellipse cx="16" cy="16" rx="13" ry="5" fill="#F59E0B" opacity="0.8" transform="rotate(-20 16 16)"/><ellipse cx="16" cy="16" rx="13" ry="5" stroke="#FEF08A" stroke-width="1" fill="none" transform="rotate(-20 16 16)"/><circle cx="16" cy="16" r="4" fill="#030712"/><circle cx="16" cy="16" r="4" stroke="#FFFFFF" stroke-width="0.8"/></svg>`
+  },
+  {
+    id: 'einstein-ring',
+    name: 'Einstein Gravitational Ring',
+    category: 'deep-sky',
+    path: '/svgs/deep-sky/einstein-ring.svg',
+    tags: ['einstein ring', 'gravitational lensing', 'general relativity', 'spacetime curve', 'galaxy cluster'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="lens-core" cx="16" cy="16" r="4" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#F59E0B"/></radialGradient></defs><circle cx="16" cy="16" r="11" stroke="#00F0FF" stroke-width="2" fill="none" opacity="0.85"/><circle cx="16" cy="16" r="11" stroke="#FFFFFF" stroke-width="0.8" stroke-dasharray="4 2" fill="none"/><circle cx="16" cy="16" r="4.5" fill="url(#lens-core)"/><circle cx="5" cy="16" r="1.5" fill="#EC4899"/><circle cx="27" cy="16" r="1.5" fill="#EC4899"/></svg>`
+  },
+  {
+    id: 'tarantula-nebula',
+    name: 'Tarantula Starburst Nebula',
+    category: 'deep-sky',
+    path: '/svgs/deep-sky/tarantula-nebula.svg',
+    tags: ['tarantula nebula', '30 doradus', 'lmc', 'starburst', 'magenta nebula', 'cluster'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><path d="M16 4C10 6 4 12 6 18C8 24 14 28 20 26C26 24 28 16 24 10C20 4 18 4 16 4Z" fill="#A855F7" opacity="0.4"/><path d="M12 8C8 12 8 20 14 24C20 28 26 20 22 14C18 8 14 6 12 8Z" fill="#EC4899" opacity="0.5"/><path d="M16 10L17.5 14.5L22 16L17.5 17.5L16 22L14.5 17.5L10 16L14.5 14.5Z" fill="#FFFFFF"/><circle cx="8" cy="10" r="1.2" fill="#00F0FF"/><circle cx="24" cy="22" r="1.2" fill="#FDE047"/><circle cx="24" cy="9" r="1" fill="#00F0FF"/></svg>`
+  },
+  {
+    id: 'oort-cloud',
+    name: 'Oort Cloud Comet Halo',
+    category: 'deep-sky',
+    path: '/svgs/deep-sky/oort-cloud.svg',
+    tags: ['oort cloud', 'comet halo', 'interstellar boundary', 'solar system edge', 'particles'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="16" cy="16" r="14" stroke="#38BDF8" stroke-width="0.8" stroke-dasharray="2 3" opacity="0.6"/><circle cx="16" cy="16" r="9" stroke="#94A3B8" stroke-width="0.6" stroke-dasharray="1.5 2" opacity="0.4"/><circle cx="16" cy="16" r="3" fill="#FDE047"/><circle cx="4" cy="12" r="1" fill="#FFFFFF"/><circle cx="27" cy="19" r="1" fill="#FFFFFF"/><circle cx="12" cy="3" r="1" fill="#38BDF8"/><circle cx="20" cy="28" r="1" fill="#38BDF8"/><circle cx="25" cy="8" r="0.8" fill="#FFFFFF"/><circle cx="7" cy="24" r="0.8" fill="#FFFFFF"/></svg>`
+  },
 
   // Spacecraft & Technology (16)
   {
@@ -296,7 +384,7 @@ export const SPACE_ICONS: SpaceIcon[] = [
     name: 'Voyager Deep Space Probe',
     category: 'technology',
     path: '/svgs/technology/deep-space-probe.svg',
-    tags: ['voyager', 'probe', 'dish antenna', 'interstellar', 'deep space', 'nasa'],
+    tags: ['voyager', 'deep space probe', 'radio dish', 'spacecraft', 'interstellar probe', 'antenna'],
     svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><linearGradient id="dish-grad" x1="5" y1="8" x2="27" y2="18" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#F8FAFC"/><stop offset="70%" stop-color="#CBD5E1"/><stop offset="100%" stop-color="#64748B"/></linearGradient></defs><ellipse cx="16" cy="12" rx="11" ry="5" fill="url(#dish-grad)" stroke="#475569" stroke-width="0.8"/><ellipse cx="16" cy="12" rx="6" ry="2.5" fill="none" stroke="#94A3B8" stroke-width="0.6"/><line x1="16" y1="12" x2="16" y2="5" stroke="#38BDF8" stroke-width="1.2"/><circle cx="16" cy="4.5" r="1" fill="#F59E0B"/><polygon points="12,17 20,17 21,22 11,22" fill="#F59E0B" stroke="#B45309" stroke-width="0.8"/><line x1="11" y1="19" x2="3" y2="24" stroke="#64748B" stroke-width="1.2"/><rect x="2" y="23" width="3" height="3" rx="0.5" fill="#EF4444"/><line x1="21" y1="19" x2="29" y2="25" stroke="#94A3B8" stroke-width="0.8"/><circle cx="29" cy="25" r="1" fill="#38BDF8"/></svg>`
   },
   {
@@ -369,7 +457,7 @@ export const SPACE_ICONS: SpaceIcon[] = [
     category: 'technology',
     path: '/svgs/technology/mars-rover.svg',
     tags: ['rover', 'mars', 'curiosity', 'perseverance', 'robot', 'mast', 'wheels'],
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><rect x="8" y="15" width="16" height="7" rx="1.5" fill="#CBD5E1" stroke="#475569" stroke-width="0.9"/><rect x="10" y="13" width="12" height="3" rx="0.5" fill="#F59E0B"/><line x1="20" y1="13" x2="20" y2="5" stroke="#64748B" stroke-width="1.2"/><rect x="18" y="4" width="5" height="3" rx="0.8" fill="#1E293B" stroke="#00F0FF" stroke-width="0.8"/><circle cx="19.5" cy="5.5" r="0.8" fill="#00F0FF"/><path d="M8 18L4 20L5 23" stroke="#475569" stroke-width="1.2" stroke-linecap="round" fill="none"/><circle cx="5" cy="23" r="1" fill="#F59E0B"/><circle cx="7" cy="25" r="2.2" fill="#1E293B" stroke="#94A3B8" stroke-width="0.8"/><circle cx="16" cy="25" r="2.2" fill="#1E293B" stroke="#94A3B8" stroke-width="0.8"/><circle cx="25" cy="25" r="2.2" fill="#1E293B" stroke="#94A3B8" stroke-width="0.8"/><path d="M7 25h9h9" stroke="#64748B" stroke-width="1" opacity="0.6"/></svg>`
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><rect x="8" y="15" width="16" height="7" rx="1.5" fill="#CBD5E1" stroke="#475569" stroke-width="0.9"/><rect x="10" y="13" width="12" height="3" rx="0.5" fill="#F59E0B"/><line x1="20" y1="13" x2="20" y2="5" stroke="#64748B" stroke-width="1.2"/><rect x="18" y="4" width="5" height="3" rx="0.8" fill="#00F0FF" stroke="#00F0FF" stroke-width="0.8"/><circle cx="19.5" cy="5.5" r="0.8" fill="#00F0FF"/><path d="M8 18L4 20L5 23" stroke="#475569" stroke-width="1.2" stroke-linecap="round" fill="none"/><circle cx="5" cy="23" r="1" fill="#F59E0B"/><circle cx="7" cy="25" r="2.2" fill="#1E293B" stroke="#94A3B8" stroke-width="0.8"/><circle cx="16" cy="25" r="2.2" fill="#1E293B" stroke="#94A3B8" stroke-width="0.8"/><circle cx="25" cy="25" r="2.2" fill="#1E293B" stroke="#94A3B8" stroke-width="0.8"/><path d="M7 25h9h9" stroke="#64748B" stroke-width="1" opacity="0.6"/></svg>`
   },
   {
     id: 'lunar-rover',
@@ -411,6 +499,38 @@ export const SPACE_ICONS: SpaceIcon[] = [
     tags: ['laser comm', 'optical link', 'deep space network', 'laser beam', 'data link'],
     svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><linearGradient id="laser-beam" x1="4" y1="28" x2="28" y2="4" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#22C55E"/><stop offset="50%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#22C55E"/></linearGradient></defs><rect x="3" y="21" width="8" height="8" rx="1.5" fill="#1E293B" stroke="#22C55E" stroke-width="0.8"/><circle cx="7" cy="25" r="2" fill="#22C55E"/><rect x="21" y="3" width="8" height="8" rx="1.5" fill="#1E293B" stroke="#22C55E" stroke-width="0.8"/><circle cx="25" cy="7" r="2" fill="#22C55E"/><line x1="7" y1="25" x2="25" y2="7" stroke="url(#laser-beam)" stroke-width="2"/><circle cx="16" cy="16" r="3" fill="#22C55E" opacity="0.5"/></svg>`
   },
+  {
+    id: 'jwst-mirror',
+    name: 'JWST Gold Mirror Array',
+    category: 'technology',
+    path: '/svgs/technology/jwst-mirror.svg',
+    tags: ['jwst', 'gold mirror', 'hexagonal', 'beryllium', 'webb telescope', 'optics'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><polygon points="16,3 22,6.5 22,13.5 16,17 10,13.5 10,6.5" fill="#F59E0B" stroke="#FEF08A" stroke-width="0.8"/><polygon points="23,7 29,10.5 29,17.5 23,21 17,17.5 17,10.5" fill="#F59E0B" stroke="#FEF08A" stroke-width="0.8"/><polygon points="9,7 15,10.5 15,17.5 9,21 3,17.5 3,10.5" fill="#F59E0B" stroke="#FEF08A" stroke-width="0.8"/><polygon points="16,18 22,21.5 22,28.5 16,32 10,28.5 10,21.5" fill="#D97706" stroke="#FEF08A" stroke-width="0.8"/><circle cx="16" cy="10" r="1.5" fill="#FFFFFF"/></svg>`
+  },
+  {
+    id: 'habitat-ring',
+    name: 'Centrifugal Habitat Station',
+    category: 'technology',
+    path: '/svgs/technology/habitat-ring.svg',
+    tags: ['habitat ring', 'artificial gravity', 'torus station', 'stanford torus', 'space colony'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="16" cy="16" r="13" stroke="#CBD5E1" stroke-width="2.5" fill="none"/><circle cx="16" cy="16" r="13" stroke="#00F0FF" stroke-width="0.8" fill="none"/><circle cx="16" cy="16" r="4" fill="#1E293B" stroke="#38BDF8" stroke-width="1"/><line x1="16" y1="3" x2="16" y2="12" stroke="#64748B" stroke-width="1.2"/><line x1="16" y1="20" x2="16" y2="29" stroke="#64748B" stroke-width="1.2"/><line x1="3" y1="16" x2="12" y2="16" stroke="#64748B" stroke-width="1.2"/><line x1="20" y1="16" x2="29" y2="16" stroke="#64748B" stroke-width="1.2"/><circle cx="16" cy="16" r="1.5" fill="#FFFFFF"/></svg>`
+  },
+  {
+    id: 'mars-base-habitat',
+    name: 'Mars Geodesic Bio-Dome',
+    category: 'technology',
+    path: '/svgs/technology/mars-base-habitat.svg',
+    tags: ['mars base', 'bio dome', 'geodesic dome', 'colony', 'red planet', 'outpost'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><path d="M2 26C8 24 24 24 30 26" stroke="#C2410C" stroke-width="1.5"/><path d="M6 24C6 14 11 8 16 8C21 8 26 14 26 24Z" fill="#0EA5E9" fill-opacity="0.3" stroke="#38BDF8" stroke-width="1.2"/><line x1="16" y1="8" x2="16" y2="24" stroke="#7DD3FC" stroke-width="0.8"/><line x1="6" y1="24" x2="26" y2="24" stroke="#7DD3FC" stroke-width="0.8"/><path d="M10 14L22 14" stroke="#7DD3FC" stroke-width="0.8"/><path d="M8 19L24 19" stroke="#7DD3FC" stroke-width="0.8"/><rect x="14" y="20" width="4" height="4" fill="#0284C7" stroke="#FFFFFF" stroke-width="0.6"/></svg>`
+  },
+  {
+    id: 'plasma-rocket',
+    name: 'Nuclear Plasma Thruster',
+    category: 'technology',
+    path: '/svgs/technology/plasma-rocket.svg',
+    tags: ['plasma thruster', 'ion drive', 'vasimr', 'nuclear rocket', 'cyan plume', 'propulsion'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><polygon points="16,2 21,12 20,20 12,20 11,12" fill="#475569" stroke="#CBD5E1" stroke-width="1"/><polygon points="12,20 20,20 23,24 9,24" fill="#1E293B" stroke="#94A3B8" stroke-width="0.8"/><polygon points="14,24 18,24 21,32 11,32" fill="#00F0FF" opacity="0.85"/><polygon points="15,24 17,24 19,32 13,32" fill="#FFFFFF"/><circle cx="16" cy="11" r="2.5" fill="#38BDF8" stroke="#FFFFFF" stroke-width="0.6"/></svg>`
+  },
 
   // UFOs & Constellations (16)
   {
@@ -422,123 +542,163 @@ export const SPACE_ICONS: SpaceIcon[] = [
     svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><linearGradient id="ufo-dome" x1="16" y1="5" x2="16" y2="15" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#67E8F9"/><stop offset="60%" stop-color="#06B6D4" stop-opacity="0.8"/><stop offset="100%" stop-color="#0891B2" stop-opacity="0.5"/></linearGradient><linearGradient id="beam-light" x1="16" y1="18" x2="16" y2="31" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#22C55E" stop-opacity="0.8"/><stop offset="100%" stop-color="#15803D" stop-opacity="0"/></linearGradient></defs><polygon points="12,18 20,18 27,31 5,31" fill="url(#beam-light)"/><path d="M11 15C11 10 13 6 16 6C19 6 21 10 21 15Z" fill="url(#ufo-dome)" stroke="#A5F3FC" stroke-width="0.8"/><ellipse cx="16" cy="11" rx="2" ry="2" fill="#22C55E" opacity="0.9"/><ellipse cx="16" cy="16" rx="13" ry="3.5" fill="#CBD5E1" stroke="#475569" stroke-width="0.9"/><path d="M3 16C3 18.5 8.8 20.5 16 20.5C23.2 20.5 29 18.5 29 16" fill="#64748B"/><circle cx="8" cy="18" r="1" fill="#FEF08A"/><circle cx="13" cy="19.2" r="1" fill="#22C55E"/><circle cx="19" cy="19.2" r="1" fill="#22C55E"/><circle cx="24" cy="18" r="1" fill="#FEF08A"/></svg>`
   },
   {
-    id: 'triangle-ufo',
-    name: 'Black Triangle UFO (TR-3B)',
+    id: 'oumuamua-interstellar',
+    name: "'Oumuamua Interstellar Object",
     category: 'mysteries',
-    path: '/svgs/mysteries/triangle-ufo.svg',
-    tags: ['tr-3b', 'triangle ufo', 'stealth', 'alien tech', 'orb lights', 'antigravity'],
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><polygon points="16,4 29,27 3,27" fill="#0F172A" stroke="#334155" stroke-width="1.2"/><polygon points="16,8 26,25 6,25" fill="#1E293B"/><circle cx="16" cy="18" r="3.5" fill="#00F0FF" stroke="#FFFFFF" stroke-width="0.8"/><circle cx="16" cy="7" r="1.5" fill="#FDE047"/><circle cx="6" cy="24" r="1.5" fill="#FDE047"/><circle cx="26" cy="24" r="1.5" fill="#FDE047"/></svg>`
+    path: '/svgs/mysteries/oumuamua-interstellar.svg',
+    tags: ['oumuamua', 'interstellar visitor', 'cigar asteroid', 'scout', 'anomalous', 'tumbling'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><linearGradient id="cigar-grad" x1="4" y1="28" x2="28" y2="4" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#78350F"/><stop offset="50%" stop-color="#B45309"/><stop offset="100%" stop-color="#451A03"/></linearGradient></defs><rect x="4" y="13" width="24" height="6" rx="3" fill="url(#cigar-grad)" stroke="#F59E0B" stroke-width="0.8" transform="rotate(-35 16 16)"/><circle cx="11" cy="19" r="1" fill="#FEF08A"/><circle cx="21" cy="13" r="1.2" fill="#FEF08A"/><line x1="2" y1="28" x2="8" y2="24" stroke="#00F0FF" stroke-width="0.8" stroke-dasharray="1 1.5"/></svg>`
   },
   {
-    id: 'alien-mothership',
-    name: 'Alien Mothership',
+    id: 'space-tardigrade',
+    name: 'Cosmic Water Bear (Tardigrade)',
     category: 'mysteries',
-    path: '/svgs/mysteries/alien-mothership.svg',
-    tags: ['alien', 'mothership', 'crystal core', 'bio ship', 'green', 'extra terrestrial'],
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><linearGradient id="bio-ship" x1="16" y1="4" x2="16" y2="28" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#10B981"/><stop offset="50%" stop-color="#059669"/><stop offset="100%" stop-color="#064E3B"/></linearGradient></defs><polygon points="16,3 29,17 25,27 16,23 7,27 3,17" fill="url(#bio-ship)" stroke="#34D399" stroke-width="1"/><polygon points="16,10 20,16 16,21 12,16" fill="#F43F5E" stroke="#FDA4AF" stroke-width="0.8"/><polygon points="16,12 18,16 16,19 14,16" fill="#FFFFFF"/><line x1="16" y1="3" x2="16" y2="10" stroke="#A7F3D0" stroke-width="1"/><line x1="3" y1="17" x2="12" y2="16" stroke="#A7F3D0" stroke-width="0.8"/><line x1="29" y1="17" x2="20" y2="16" stroke="#A7F3D0" stroke-width="0.8"/><circle cx="7" cy="24" r="1.2" fill="#00F0FF"/><circle cx="25" cy="24" r="1.2" fill="#00F0FF"/></svg>`
+    path: '/svgs/mysteries/space-tardigrade.svg',
+    tags: ['tardigrade', 'water bear', 'extremophile', 'cosmic voyager', 'resilient', 'vacuum survivor'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><rect x="7" y="10" width="18" height="12" rx="6" fill="#10B981" stroke="#34D399" stroke-width="1.2"/><circle cx="8" cy="16" r="3" fill="#059669" stroke="#6EE7B7" stroke-width="0.8"/><circle cx="7" cy="16" r="1" fill="#FFFFFF"/><path d="M11 22v4M15 22v4M19 22v4M23 22v4" stroke="#34D399" stroke-width="1.2" stroke-linecap="round"/><path d="M11 10V6M15 10V6M19 10V6" stroke="#34D399" stroke-width="1" stroke-linecap="round"/><circle cx="26" cy="16" r="1.5" fill="#FDE047"/></svg>`
   },
   {
-    id: 'crop-circle-pattern',
-    name: 'Sacred Geometry Crop Circle',
+    id: 'kardashev-type3',
+    name: 'Kardashev Type III Grid',
     category: 'mysteries',
-    path: '/svgs/mysteries/crop-circle-pattern.svg',
-    tags: ['crop circle', 'sacred geometry', 'fractal', 'alien sign', 'amber', 'symbol'],
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="16" cy="16" r="13" stroke="#F59E0B" stroke-width="1.2"/><circle cx="16" cy="16" r="8" stroke="#FDE047" stroke-width="1"/><circle cx="16" cy="16" r="4" fill="#F59E0B"/><circle cx="16" cy="3" r="1.8" fill="#F59E0B"/><circle cx="16" cy="29" r="1.8" fill="#F59E0B"/><circle cx="3" cy="16" r="1.8" fill="#F59E0B"/><circle cx="29" cy="16" r="1.8" fill="#F59E0B"/><polygon points="16,8 23,20 9,20" stroke="#FEF08A" stroke-width="0.8" fill="none"/><polygon points="16,24 23,12 9,12" stroke="#FEF08A" stroke-width="0.8" fill="none"/></svg>`
+    path: '/svgs/mysteries/kardashev-type3.svg',
+    tags: ['kardashev type 3', 'galactic grid', 'super civilization', 'energy constellation', 'dyson galaxy'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><ellipse cx="16" cy="16" rx="13" ry="8" stroke="#00F0FF" stroke-width="0.8" stroke-dasharray="2 2" fill="none" transform="rotate(-15 16 16)"/><polygon points="16,4 26,12 22,24 10,24 6,12" stroke="#EC4899" stroke-width="0.8" fill="none"/><circle cx="16" cy="4" r="1.8" fill="#FDE047"/><circle cx="26" cy="12" r="1.8" fill="#FDE047"/><circle cx="22" cy="24" r="1.8" fill="#FDE047"/><circle cx="10" cy="24" r="1.8" fill="#FDE047"/><circle cx="6" cy="12" r="1.8" fill="#FDE047"/><circle cx="16" cy="16" r="3" fill="#FFFFFF" stroke="#00F0FF" stroke-width="1"/></svg>`
   },
   {
-    id: 'big-dipper',
-    name: 'Big Dipper (Ursa Major)',
+    id: 'quantum-foam',
+    name: 'Quantum Vacuum Fluctuation',
     category: 'mysteries',
-    path: '/svgs/mysteries/big-dipper.svg',
-    tags: ['big dipper', 'ursa major', 'constellation', 'stars', 'plow', 'sky map'],
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><polyline points="4,7 8,11 13,13 17,16 18,22 27,24 26,17 17,16" stroke="#38BDF8" stroke-width="0.9" stroke-dasharray="1.5 1.5" opacity="0.6"/><circle cx="4" cy="7" r="1.8" fill="#F0F9FF"/><circle cx="8" cy="11" r="1.5" fill="#F0F9FF"/><circle cx="13" cy="13" r="1.5" fill="#F0F9FF"/><circle cx="17" cy="16" r="1.8" fill="#FDE047"/><circle cx="18" cy="22" r="1.6" fill="#F0F9FF"/><circle cx="27" cy="24" r="2" fill="#FDE047"/><circle cx="26" cy="17" r="1.8" fill="#F0F9FF"/><circle cx="23" cy="7" r="0.6" fill="#94A3B8" opacity="0.5"/><circle cx="8" cy="25" r="0.6" fill="#94A3B8" opacity="0.5"/><circle cx="29" cy="12" r="0.7" fill="#94A3B8" opacity="0.5"/></svg>`
+    path: '/svgs/mysteries/quantum-foam.svg',
+    tags: ['quantum foam', 'vacuum fluctuation', 'virtual particle', 'quantum spacetime', 'pair creation'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="11" cy="16" r="6" stroke="#00F0FF" stroke-width="1.2" fill="none"/><circle cx="21" cy="16" r="6" stroke="#EC4899" stroke-width="1.2" fill="none"/><path d="M11 16h10" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="1 1"/><circle cx="11" cy="16" r="2" fill="#00F0FF"/><circle cx="21" cy="16" r="2" fill="#EC4899"/><text x="10" y="18" fill="#000" font-size="3" font-weight="bold" text-anchor="middle">-</text><text x="21" y="18" fill="#FFF" font-size="3" font-weight="bold" text-anchor="middle">+</text></svg>`
+  },
+  {
+    id: 'multiverse-bubble',
+    name: 'Multiverse Inflation Bubbles',
+    category: 'mysteries',
+    path: '/svgs/mysteries/multiverse-bubble.svg',
+    tags: ['multiverse', 'eternal inflation', 'bubble universe', 'parallel cosmos', 'string theory'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="bub1" cx="12" cy="12" r="8" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#E0F2FE"/><stop offset="60%" stop-color="#0284C7"/><stop offset="100%" stop-color="#0F172A"/></radialGradient><radialGradient id="bub2" cx="22" cy="20" r="6" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FCE7F3"/><stop offset="60%" stop-color="#EC4899"/><stop offset="100%" stop-color="#4C0519"/></radialGradient></defs><circle cx="12" cy="12" r="9" fill="url(#bub1)" stroke="#7DD3FC" stroke-width="1"/><circle cx="22" cy="20" r="7" fill="url(#bub2)" stroke="#F472B6" stroke-width="1"/><circle cx="22" cy="8" r="4" fill="#10B981" opacity="0.7" stroke="#6EE7B7" stroke-width="0.8"/><circle cx="7" cy="24" r="3.5" fill="#F59E0B" opacity="0.7" stroke="#FDE047" stroke-width="0.8"/></svg>`
   },
   {
     id: 'orion-constellation',
     name: 'Orion Constellation',
     category: 'mysteries',
     path: '/svgs/mysteries/orion-constellation.svg',
-    tags: ['orion', 'betelgeuse', 'rigel', 'orion belt', 'constellation', 'hunter', 'nebula'],
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="orion-neb" cx="16" cy="20" r="6" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#EC4899" stop-opacity="0.6"/><stop offset="100%" stop-color="#312E81" stop-opacity="0"/></radialGradient></defs><circle cx="16" cy="20" r="6" fill="url(#orion-neb)"/><line x1="9" y1="6" x2="23" y2="7" stroke="#818CF8" stroke-width="0.8" opacity="0.5"/><line x1="9" y1="6" x2="13" y2="16" stroke="#818CF8" stroke-width="0.8" opacity="0.5"/><line x1="23" y1="7" x2="19" y2="16" stroke="#818CF8" stroke-width="0.8" opacity="0.5"/><line x1="13" y1="16" x2="10" y2="26" stroke="#818CF8" stroke-width="0.8" opacity="0.5"/><line x1="19" y1="16" x2="22" y2="26" stroke="#818CF8" stroke-width="0.8" opacity="0.5"/><circle cx="9" cy="6" r="2.2" fill="#EF4444"/><circle cx="9" cy="6" r="1" fill="#FEF2F2"/><circle cx="23" cy="7" r="1.6" fill="#38BDF8"/><line x1="13" y1="16" x2="19" y2="16" stroke="#38BDF8" stroke-width="1.5"/><circle cx="13" cy="16" r="1.5" fill="#FFFFFF"/><circle cx="16" cy="16" r="1.5" fill="#FFFFFF"/><circle cx="19" cy="16" r="1.5" fill="#FFFFFF"/><circle cx="22" cy="26" r="2.2" fill="#38BDF8"/><circle cx="22" cy="26" r="1" fill="#FFFFFF"/><circle cx="10" cy="26" r="1.6" fill="#60A5FA"/></svg>`
+    tags: ['orion', 'constellation', 'hunter', 'stars', 'bellatrix', 'betelgeuse', 'rigel'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="10" cy="7" r="1.4" fill="#FEF08A"/><circle cx="22" cy="6" r="1.8" fill="#F87171"/><circle cx="7" cy="14" r="1.2" fill="#BAE6FD"/><circle cx="25" cy="13" r="1.2" fill="#BAE6FD"/><circle cx="12" cy="17" r="1.4" fill="#FDE047"/><circle cx="16" cy="17" r="1.4" fill="#FDE047"/><circle cx="20" cy="17" r="1.4" fill="#FDE047"/><circle cx="8" cy="24" r="1.8" fill="#93C5FD"/><circle cx="24" cy="25" r="1.4" fill="#BAE6FD"/><line x1="10" y1="7" x2="22" y2="6" stroke="#475569" stroke-width="0.5" opacity="0.6"/><line x1="10" y1="7" x2="7" y2="14" stroke="#475569" stroke-width="0.5" opacity="0.6"/><line x1="22" y1="6" x2="25" y2="13" stroke="#475569" stroke-width="0.5" opacity="0.6"/><line x1="7" y1="14" x2="12" y2="17" stroke="#475569" stroke-width="0.5" opacity="0.6"/><line x1="25" y1="13" x2="20" y2="17" stroke="#475569" stroke-width="0.5" opacity="0.6"/><line x1="12" y1="17" x2="8" y2="24" stroke="#475569" stroke-width="0.5" opacity="0.6"/><line x1="20" y1="17" x2="24" y2="25" stroke="#475569" stroke-width="0.5" opacity="0.6"/><circle cx="16" cy="22" r="0.8" fill="#A5F3FC" opacity="0.8"/></svg>`
   },
   {
-    id: 'cassiopeia-constellation',
-    name: 'Cassiopeia (The W)',
+    id: 'alien-radio-signal',
+    name: 'Alien Radio Signal (WOW!)',
     category: 'mysteries',
-    path: '/svgs/mysteries/cassiopeia-constellation.svg',
-    tags: ['cassiopeia', 'w constellation', 'queen', 'sky map', 'stars'],
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><polyline points="4,10 9,21 16,14 23,23 28,11" stroke="#FDE047" stroke-width="1" stroke-dasharray="2 1.5"/><circle cx="4" cy="10" r="1.8" fill="#FFFFFF"/><circle cx="9" cy="21" r="1.8" fill="#FDE047"/><circle cx="16" cy="14" r="2.2" fill="#38BDF8"/><circle cx="23" cy="23" r="1.8" fill="#FFFFFF"/><circle cx="28" cy="11" r="2" fill="#EC4899"/></svg>`
+    path: '/svgs/mysteries/alien-radio-signal.svg',
+    tags: ['wow signal', 'seti', 'alien transmission', 'radio wave', 'extraterrestrial', 'contact'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><path d="M2 16 Q5 10 8 16 Q11 22 14 16 Q17 10 20 16 Q23 22 26 16 Q29 10 30 16" stroke="#22C55E" stroke-width="1.5" fill="none"/><path d="M2 16 Q5 12 8 16 Q11 20 14 16 Q17 12 20 16 Q23 20 26 16 Q29 12 30 16" stroke="#00F0FF" stroke-width="0.6" fill="none" opacity="0.5"/><circle cx="16" cy="16" r="3" fill="none" stroke="#22C55E" stroke-width="1" stroke-dasharray="1 1"/><circle cx="16" cy="16" r="1.2" fill="#22C55E"/><line x1="16" y1="4" x2="16" y2="7" stroke="#22C55E" stroke-width="1.2"/><line x1="16" y1="25" x2="16" y2="28" stroke="#22C55E" stroke-width="1.2"/></svg>`
   },
   {
-    id: 'scorpius-constellation',
-    name: 'Scorpius & Antares',
+    id: 'dark-energy-expansion',
+    name: 'Dark Energy Universe Expansion',
     category: 'mysteries',
-    path: '/svgs/scorpius-constellation.svg',
-    tags: ['scorpius', 'antares', 'scorpion', 'red supergiant', 'constellation'],
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><path d="M6 7L12 12L15 17L14 23L17 27L22 28L25 25L24 21" stroke="#F472B6" stroke-width="0.8" stroke-dasharray="1.5 1.5"/><line x1="6" y1="7" x2="4" y2="4" stroke="#F472B6" stroke-width="0.8"/><line x1="6" y1="7" x2="8" y2="3" stroke="#F472B6" stroke-width="0.8"/><circle cx="12" cy="12" r="2.5" fill="#EF4444"/><circle cx="12" cy="12" r="1" fill="#FFFFFF"/><circle cx="6" cy="7" r="1.5" fill="#F0F9FF"/><circle cx="15" cy="17" r="1.5" fill="#F0F9FF"/><circle cx="17" cy="27" r="1.5" fill="#F0F9FF"/><circle cx="22" cy="28" r="1.5" fill="#F0F9FF"/><circle cx="25" cy="25" r="1.5" fill="#FDE047"/><circle cx="24" cy="21" r="1.8" fill="#38BDF8"/></svg>`
+    path: '/svgs/mysteries/dark-energy-expansion.svg',
+    tags: ['dark energy', 'universe expansion', 'accelerating cosmos', 'lambda', 'cosmological constant'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="16" cy="16" r="5" fill="none" stroke="#7C3AED" stroke-width="1"/><circle cx="16" cy="16" r="9" fill="none" stroke="#7C3AED" stroke-width="0.6" opacity="0.6"/><circle cx="16" cy="16" r="13" fill="none" stroke="#7C3AED" stroke-width="0.4" opacity="0.3"/><line x1="16" y1="3" x2="16" y2="7" stroke="#A78BFA" stroke-width="1.2"/><line x1="16" y1="25" x2="16" y2="29" stroke="#A78BFA" stroke-width="1.2"/><line x1="3" y1="16" x2="7" y2="16" stroke="#A78BFA" stroke-width="1.2"/><line x1="25" y1="16" x2="29" y2="16" stroke="#A78BFA" stroke-width="1.2"/><line x1="6" y1="6" x2="9" y2="9" stroke="#A78BFA" stroke-width="1"/><line x1="26" y1="6" x2="23" y2="9" stroke="#A78BFA" stroke-width="1"/><line x1="6" y1="26" x2="9" y2="23" stroke="#A78BFA" stroke-width="1"/><line x1="26" y1="26" x2="23" y2="23" stroke="#A78BFA" stroke-width="1"/><circle cx="16" cy="16" r="2" fill="#7C3AED"/></svg>`
   },
   {
-    id: 'shooting-star-comet',
-    name: 'Halley Comet',
+    id: 'fermi-paradox',
+    name: 'Fermi Paradox — The Great Silence',
     category: 'mysteries',
-    path: '/svgs/mysteries/shooting-star-comet.svg',
-    tags: ['comet', 'shooting star', 'halley', 'meteor', 'fireball', 'plasma tail'],
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><linearGradient id="comet-tail-ion" x1="26" y1="6" x2="4" y2="28" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#00F0FF"/><stop offset="40%" stop-color="#3B82F6"/><stop offset="100%" stop-color="#1E1B4B" stop-opacity="0"/></linearGradient><linearGradient id="comet-tail-dust" x1="26" y1="6" x2="8" y2="24" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FEF08A"/><stop offset="50%" stop-color="#F59E0B" stop-opacity="0.8"/><stop offset="100%" stop-color="#78350F" stop-opacity="0"/></linearGradient></defs><polygon points="26,6 22,9 3,21 16,14" fill="url(#comet-tail-dust)"/><polygon points="26,6 23,4 2,26 8,28" fill="url(#comet-tail-ion)"/><circle cx="25" cy="7" r="4.5" fill="#00F0FF" opacity="0.4"/><circle cx="25" cy="7" r="3" fill="#38BDF8"/><circle cx="25" cy="7" r="1.8" fill="#FFFFFF"/><path d="M25 2v10M20 7h10" stroke="#FFFFFF" stroke-width="0.8" opacity="0.8"/></svg>`
+    path: '/svgs/mysteries/fermi-paradox.svg',
+    tags: ['fermi paradox', 'great silence', 'lone signal', 'where is everybody', 'drake equation', 'seti'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="16" cy="16" r="13" fill="none" stroke="#1E293B" stroke-width="0.5"/><circle cx="6" cy="8" r="0.8" fill="#FDE047" opacity="0.5"/><circle cx="25" cy="5" r="0.6" fill="#BAE6FD" opacity="0.4"/><circle cx="28" cy="20" r="0.7" fill="#FDE047" opacity="0.3"/><circle cx="4" cy="24" r="0.6" fill="#F9A8D4" opacity="0.4"/><circle cx="22" cy="28" r="0.5" fill="#BAE6FD" opacity="0.3"/><circle cx="16" cy="16" r="2.5" fill="#22C55E" stroke="#86EFAC" stroke-width="0.8"/><path d="M16 13.5V10" stroke="#22C55E" stroke-width="0.8" stroke-dasharray="1 1"/><path d="M18.5 14.5L22 11" stroke="#22C55E" stroke-width="0.8" stroke-dasharray="1 1"/><path d="M13.5 14.5L10 11" stroke="#22C55E" stroke-width="0.8" stroke-dasharray="1 1"/></svg>`
   },
   {
-    id: 'meteor-shower',
-    name: 'Perseid Meteor Shower',
+    id: 'cosmic-web',
+    name: 'Large-Scale Cosmic Web',
     category: 'mysteries',
-    path: '/svgs/mysteries/meteor-shower.svg',
-    tags: ['meteor shower', 'perseids', 'falling stars', 'fireballs', 'atmosphere'],
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><line x1="28" y1="4" x2="16" y2="16" stroke="#00F0FF" stroke-width="1.8" stroke-linecap="round"/><circle cx="16" cy="16" r="1" fill="#FFFFFF"/><line x1="22" y1="12" x2="8" y2="26" stroke="#FDE047" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="26" r="1" fill="#FFFFFF"/><line x1="18" y1="2" x2="6" y2="14" stroke="#EC4899" stroke-width="1.2" stroke-linecap="round"/><circle cx="6" cy="14" r="0.8" fill="#FFFFFF"/><line x1="30" y1="16" x2="18" y2="28" stroke="#38BDF8" stroke-width="1.2" stroke-linecap="round"/><circle cx="18" cy="28" r="0.8" fill="#FFFFFF"/></svg>`
+    path: '/svgs/mysteries/cosmic-web.svg',
+    tags: ['cosmic web', 'large scale structure', 'filaments', 'voids', 'galaxy clusters', 'dark matter'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="4" cy="4" r="1.5" fill="#A78BFA"/><circle cx="16" cy="3" r="1.2" fill="#818CF8"/><circle cx="28" cy="6" r="1.5" fill="#A78BFA"/><circle cx="3" cy="16" r="1.2" fill="#818CF8"/><circle cx="16" cy="16" r="2" fill="#E879F9"/><circle cx="29" cy="17" r="1.2" fill="#818CF8"/><circle cx="6" cy="27" r="1.5" fill="#A78BFA"/><circle cx="18" cy="28" r="1.2" fill="#818CF8"/><circle cx="27" cy="26" r="1.5" fill="#A78BFA"/><circle cx="10" cy="11" r="0.8" fill="#C4B5FD" opacity="0.7"/><circle cx="24" cy="10" r="0.8" fill="#C4B5FD" opacity="0.7"/><circle cx="8" cy="22" r="0.8" fill="#C4B5FD" opacity="0.7"/><circle cx="23" cy="23" r="0.8" fill="#C4B5FD" opacity="0.7"/><line x1="4" y1="4" x2="10" y2="11" stroke="#7C3AED" stroke-width="0.5" opacity="0.6"/><line x1="16" y1="3" x2="10" y2="11" stroke="#7C3AED" stroke-width="0.5" opacity="0.6"/><line x1="16" y1="3" x2="24" y2="10" stroke="#7C3AED" stroke-width="0.5" opacity="0.6"/><line x1="28" y1="6" x2="24" y2="10" stroke="#7C3AED" stroke-width="0.5" opacity="0.6"/><line x1="3" y1="16" x2="10" y2="11" stroke="#7C3AED" stroke-width="0.5" opacity="0.6"/><line x1="3" y1="16" x2="8" y2="22" stroke="#7C3AED" stroke-width="0.5" opacity="0.6"/><line x1="29" y1="17" x2="24" y2="10" stroke="#7C3AED" stroke-width="0.5" opacity="0.6"/><line x1="29" y1="17" x2="23" y2="23" stroke="#7C3AED" stroke-width="0.5" opacity="0.6"/><line x1="10" y1="11" x2="16" y2="16" stroke="#A855F7" stroke-width="0.6" opacity="0.8"/><line x1="24" y1="10" x2="16" y2="16" stroke="#A855F7" stroke-width="0.6" opacity="0.8"/><line x1="8" y1="22" x2="16" y2="16" stroke="#A855F7" stroke-width="0.6" opacity="0.8"/><line x1="23" y1="23" x2="16" y2="16" stroke="#A855F7" stroke-width="0.6" opacity="0.8"/><line x1="8" y1="22" x2="6" y2="27" stroke="#7C3AED" stroke-width="0.5" opacity="0.6"/><line x1="23" y1="23" x2="27" y2="26" stroke="#7C3AED" stroke-width="0.5" opacity="0.6"/><line x1="23" y1="23" x2="18" y2="28" stroke="#7C3AED" stroke-width="0.5" opacity="0.6"/></svg>`
   },
   {
-    id: 'asteroid-belt',
-    name: 'Asteroid Belt Cluster',
+    id: 'hawking-radiation',
+    name: 'Hawking Radiation Evaporation',
     category: 'mysteries',
-    path: '/svgs/mysteries/asteroid-belt.svg',
-    tags: ['asteroid', 'meteorite', 'space rock', 'kuiper', 'orbit', 'debris'],
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><linearGradient id="rock-grad" x1="4" y1="4" x2="28" y2="28" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#94A3B8"/><stop offset="60%" stop-color="#475569"/><stop offset="100%" stop-color="#1E293B"/></linearGradient></defs><ellipse cx="16" cy="16" rx="14" ry="7" stroke="#64748B" stroke-width="0.8" stroke-dasharray="2 2" fill="none" transform="rotate(-20 16 16)" opacity="0.4"/><polygon points="12,10 18,8 22,12 20,18 14,19 9,15" fill="url(#rock-grad)" stroke="#CBD5E1" stroke-width="0.8"/><circle cx="14" cy="12" r="1.2" fill="#334155"/><circle cx="18" cy="15" r="1" fill="#334155"/><polygon points="4,18 7,16 9,19 7,22 4,21" fill="url(#rock-grad)" stroke="#94A3B8" stroke-width="0.6"/><polygon points="24,19 27,17 29,20 27,22 25,21" fill="url(#rock-grad)" stroke="#94A3B8" stroke-width="0.6"/><circle cx="22" cy="7" r="1.2" fill="#CBD5E1"/><circle cx="8" cy="8" r="0.9" fill="#94A3B8"/><circle cx="15" cy="25" r="1" fill="#94A3B8"/></svg>`
+    path: '/svgs/mysteries/hawking-radiation.svg',
+    tags: ['hawking radiation', 'black hole evaporation', 'virtual particles', 'information paradox', 'stephen hawking'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="bh-core" cx="16" cy="16" r="6" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#000000"/><stop offset="80%" stop-color="#0F172A"/><stop offset="100%" stop-color="#7C3AED"/></radialGradient></defs><circle cx="16" cy="16" r="7" fill="url(#bh-core)" stroke="#7C3AED" stroke-width="0.8"/><circle cx="16" cy="16" r="10" fill="none" stroke="#7C3AED" stroke-width="0.4" opacity="0.4"/><circle cx="7" cy="11" r="1" fill="#F472B6" opacity="0.9"/><circle cx="6" cy="13" r="0.7" fill="#00F0FF" opacity="0.7"/><circle cx="26" cy="19" r="1" fill="#00F0FF" opacity="0.9"/><circle cx="27" cy="17" r="0.7" fill="#F472B6" opacity="0.7"/><circle cx="12" cy="4" r="1" fill="#FDE047" opacity="0.8"/><circle cx="21" cy="28" r="1" fill="#FDE047" opacity="0.8"/><line x1="8" y1="11" x2="10" y2="13" stroke="#F472B6" stroke-width="0.6"/><line x1="25" y1="19" x2="23" y2="17" stroke="#00F0FF" stroke-width="0.6"/><line x1="13" y1="5" x2="14" y2="8" stroke="#FDE047" stroke-width="0.6"/><line x1="20" y1="27" x2="19" y2="24" stroke="#FDE047" stroke-width="0.6"/></svg>`
   },
   {
-    id: 'alien-entity',
-    name: 'Cosmic Alien Avatar',
+    id: 'time-dilation',
+    name: 'Relativistic Time Dilation',
     category: 'mysteries',
-    path: '/svgs/mysteries/alien-entity.svg',
-    tags: ['alien', 'extraterrestrial', 'et', 'grey alien', 'green', 'glowing eyes', 'avatar'],
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="alien-skin" x1="16" y1="8" x2="16" y2="28" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#A7F3D0"/><stop offset="50%" stop-color="#10B981"/><stop offset="100%" stop-color="#064E3B"/></radialGradient><radialGradient id="alien-eye" x1="12" y1="14" x2="12" y2="20" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#38BDF8"/><stop offset="60%" stop-color="#0F172A"/><stop offset="100%" stop-color="#000000"/></radialGradient></defs><path d="M16 4C9 4 4 9 4 17C4 22 10 27 16 27C22 27 28 22 28 17C28 9 23 4 16 4Z" fill="url(#alien-skin)" stroke="#34D399" stroke-width="1.2"/><ellipse cx="11" cy="16" rx="4" ry="2.5" fill="url(#alien-eye)" stroke="#00F0FF" stroke-width="0.8" transform="rotate(-20 11 16)"/><ellipse cx="21" cy="16" rx="4" ry="2.5" fill="url(#alien-eye)" stroke="#00F0FF" stroke-width="0.8" transform="rotate(20 21 16)"/><circle cx="10" cy="15" r="1" fill="#FFFFFF"/><circle cx="22" cy="15" r="1" fill="#FFFFFF"/><circle cx="14.5" cy="21.5" r="0.4" fill="#064E3B"/><circle cx="17.5" cy="21.5" r="0.4" fill="#064E3B"/><path d="M14 23.5C15 24 17 24 18 23.5" stroke="#065F46" stroke-width="0.8" stroke-linecap="round"/></svg>`
+    path: '/svgs/mysteries/time-dilation.svg',
+    tags: ['time dilation', 'relativity', 'einstein', 'spacetime', 'twin paradox', 'gravitational time'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="16" cy="16" r="11" fill="none" stroke="#38BDF8" stroke-width="1"/><circle cx="16" cy="16" r="1.2" fill="#38BDF8"/><line x1="16" y1="16" x2="16" y2="6" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/><line x1="16" y1="16" x2="22" y2="20" stroke="#38BDF8" stroke-width="1" stroke-linecap="round"/><path d="M16 5 Q24 8 27 16 Q24 24 16 27" stroke="#EC4899" stroke-width="1" fill="none" stroke-dasharray="2 1.5"/><path d="M16 5 Q8 8 5 16 Q8 24 16 27" stroke="#22C55E" stroke-width="1" fill="none" stroke-dasharray="2 1.5"/><circle cx="16" cy="5" r="1" fill="#FDE047"/><circle cx="27" cy="16" r="1" fill="#EC4899"/><circle cx="5" cy="16" r="1" fill="#22C55E"/></svg>`
   },
   {
-    id: 'monolith-alien',
-    name: '2001 Alien Monolith',
+    id: 'rogue-planet',
+    name: 'Rogue Free-Floating Planet',
     category: 'mysteries',
-    path: '/svgs/mysteries/monolith-alien.svg',
-    tags: ['monolith', '2001', 'kubrick', 'black slab', 'cosmic mystery', 'alignment'],
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="16" cy="6" r="3" fill="#F59E0B" stroke="#D97706" stroke-width="0.6"/><path d="M2 28C6 24 26 24 30 28" stroke="#64748B" stroke-width="1.2"/><rect x="13" y="8" width="6" height="18" rx="0.5" fill="#030712" stroke="#475569" stroke-width="0.8"/><line x1="13" y1="8" x2="13" y2="26" stroke="#00F0FF" stroke-width="0.8" opacity="0.8"/><circle cx="16" cy="17" r="0.8" fill="#FFFFFF" opacity="0.6"/></svg>`
+    path: '/svgs/mysteries/rogue-planet.svg',
+    tags: ['rogue planet', 'free floating', 'nomad planet', 'ejected', 'dark planet', 'orphan world'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="rogue-grad" cx="14" cy="13" r="10" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#374151"/><stop offset="60%" stop-color="#1F2937"/><stop offset="100%" stop-color="#111827"/></radialGradient></defs><circle cx="16" cy="16" r="10" fill="url(#rogue-grad)" stroke="#4B5563" stroke-width="0.8"/><ellipse cx="16" cy="16" rx="10" ry="3.5" fill="none" stroke="#6B7280" stroke-width="0.7" transform="rotate(-25 16 16)" opacity="0.6"/><circle cx="12" cy="13" r="2" fill="#374151" stroke="#4B5563" stroke-width="0.5"/><circle cx="20" cy="18" r="1.5" fill="#2D3748" stroke="#4B5563" stroke-width="0.5"/><circle cx="3" cy="6" r="0.6" fill="#F1F5F9" opacity="0.5"/><circle cx="28" cy="4" r="0.5" fill="#F1F5F9" opacity="0.4"/><circle cx="5" cy="26" r="0.5" fill="#F1F5F9" opacity="0.3"/><circle cx="29" cy="25" r="0.6" fill="#F1F5F9" opacity="0.4"/></svg>`
   },
   {
-    id: 'quantum-portal',
-    name: 'Quantum Star Gate',
+    id: 'zodiac-wheel',
+    name: 'Celestial Zodiac Wheel',
     category: 'mysteries',
-    path: '/svgs/mysteries/quantum-portal.svg',
-    tags: ['stargate', 'quantum portal', 'teleport', 'hexagonal', 'runes', 'portal', 'cyan'],
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="portal-vortex" cx="16" cy="16" r="12" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="30%" stop-color="#00F0FF"/><stop offset="70%" stop-color="#A855F7"/><stop offset="100%" stop-color="#0F172A"/></radialGradient></defs><polygon points="16,2 28,9 28,23 16,30 4,23 4,9" fill="#1E1B4B" stroke="#00F0FF" stroke-width="1.5"/><circle cx="16" cy="16" r="10" fill="url(#portal-vortex)"/><polygon points="16,7 23,11 23,21 16,25 9,21 9,11" stroke="#FFFFFF" stroke-width="0.8" fill="none" opacity="0.7"/><circle cx="16" cy="2" r="1.5" fill="#00F0FF"/><circle cx="28" cy="9" r="1.5" fill="#A855F7"/><circle cx="28" cy="23" r="1.5" fill="#EC4899"/><circle cx="16" cy="30" r="1.5" fill="#00F0FF"/><circle cx="4" cy="23" r="1.5" fill="#A855F7"/><circle cx="4" cy="9" r="1.5" fill="#EC4899"/></svg>`
+    path: '/svgs/mysteries/zodiac-wheel.svg',
+    tags: ['zodiac', 'celestial wheel', 'astrology', 'ecliptic', 'signs', 'constellation ring'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="16" cy="16" r="13" fill="none" stroke="#F59E0B" stroke-width="0.6"/><circle cx="16" cy="16" r="9" fill="none" stroke="#F59E0B" stroke-width="0.4" stroke-dasharray="1.5 1.5"/><circle cx="16" cy="16" r="3" fill="none" stroke="#FDE047" stroke-width="0.8"/><circle cx="16" cy="3" r="1.2" fill="#FDE047"/><circle cx="22.5" cy="5" r="1" fill="#F472B6"/><circle cx="29" cy="16" r="1.2" fill="#FDE047"/><circle cx="22.5" cy="27" r="1" fill="#F472B6"/><circle cx="16" cy="29" r="1.2" fill="#FDE047"/><circle cx="9.5" cy="27" r="1" fill="#F472B6"/><circle cx="3" cy="16" r="1.2" fill="#FDE047"/><circle cx="9.5" cy="5" r="1" fill="#F472B6"/><line x1="16" y1="3" x2="16" y2="13" stroke="#F59E0B" stroke-width="0.4" opacity="0.5"/><line x1="29" y1="16" x2="19" y2="16" stroke="#F59E0B" stroke-width="0.4" opacity="0.5"/><line x1="16" y1="29" x2="16" y2="19" stroke="#F59E0B" stroke-width="0.4" opacity="0.5"/><line x1="3" y1="16" x2="13" y2="16" stroke="#F59E0B" stroke-width="0.4" opacity="0.5"/><circle cx="16" cy="16" r="1.5" fill="#FDE047"/></svg>`
   },
   {
-    id: 'alien-signal-wow',
-    name: 'Wow! Signal Waveform',
+    id: 'boyajians-star',
+    name: "Boyajian's Alien Megastructure Star",
     category: 'mysteries',
-    path: '/svgs/mysteries/alien-signal-wow.svg',
-    tags: ['wow signal', 'radio astronomy', 'seti', 'alien signal', 'waveform', 'frequency'],
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><path d="M2 16H8L10 4L13 28L16 2L19 29L22 10L24 16H30" stroke="#00F0FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><line x1="2" y1="16" x2="30" y2="16" stroke="#334155" stroke-width="0.8" stroke-dasharray="2 2"/><circle cx="16" cy="2" r="1.5" fill="#EC4899"/><circle cx="19" cy="29" r="1.5" fill="#FDE047"/></svg>`
+    path: '/svgs/mysteries/boyajians-star.svg',
+    tags: ['boyajians star', 'alien megastructure', 'kic 8462852', 'tabby star', 'dyson swarm', 'unexplained dimming'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="tabby-star" cx="16" cy="16" r="6" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFFBEB"/><stop offset="50%" stop-color="#FDE047"/><stop offset="100%" stop-color="#F59E0B"/></radialGradient></defs><circle cx="16" cy="16" r="6" fill="url(#tabby-star)"/><path d="M10 10 L8 6 L12 9 Z" fill="#1E293B" opacity="0.8"/><path d="M22 8 L26 7 L24 11 Z" fill="#1E293B" opacity="0.7"/><path d="M24 22 L28 24 L25 20 Z" fill="#1E293B" opacity="0.6"/><path d="M9 21 L5 24 L8 20 Z" fill="#1E293B" opacity="0.8"/><path d="M14 7 L15 3 L17 7 Z" fill="#1E293B" opacity="0.5"/><rect x="12" y="22" width="3" height="6" rx="0.5" fill="#475569" opacity="0.7"/><rect x="17" y="23" width="2.5" height="5" rx="0.5" fill="#475569" opacity="0.6"/></svg>`
   },
   {
-    id: 'space-time-singularity',
-    name: 'Cosmic Eye Singularity',
+    id: 'cmb-radiation',
+    name: 'Cosmic Microwave Background',
     category: 'mysteries',
-    path: '/svgs/mysteries/space-time-singularity.svg',
-    tags: ['cosmic eye', 'god eye', 'helix nebula', 'singularity', 'eye', 'universe'],
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="eye-iris" cx="16" cy="16" r="6" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="40%" stop-color="#00F0FF"/><stop offset="75%" stop-color="#A855F7"/><stop offset="100%" stop-color="#0F172A"/></radialGradient></defs><path d="M2 16C6 8 26 8 30 16C26 24 6 24 2 16Z" fill="#1E1B4B" stroke="#38BDF8" stroke-width="1.2"/><circle cx="16" cy="16" r="7" fill="url(#eye-iris)"/><circle cx="16" cy="16" r="3" fill="#030712"/><circle cx="14.8" cy="14.8" r="1" fill="#FFFFFF"/></svg>`
+    path: '/svgs/mysteries/cmb-radiation.svg',
+    tags: ['cmb', 'cosmic microwave background', 'big bang echo', 'planck map', 'anisotropy', 'relic radiation'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><ellipse cx="16" cy="16" rx="14" ry="9" fill="#1E293B" stroke="#334155" stroke-width="0.6"/><ellipse cx="10" cy="13" rx="4" ry="2.5" fill="#EF4444" opacity="0.5"/><ellipse cx="22" cy="18" rx="3.5" ry="2" fill="#3B82F6" opacity="0.5"/><ellipse cx="16" cy="16" rx="3" ry="2" fill="#F59E0B" opacity="0.6"/><ellipse cx="7" cy="18" rx="2.5" ry="1.5" fill="#3B82F6" opacity="0.4"/><ellipse cx="25" cy="12" rx="2" ry="1.5" fill="#EF4444" opacity="0.4"/><ellipse cx="19" cy="13" rx="2" ry="1.2" fill="#FDE047" opacity="0.4"/><ellipse cx="12" cy="18" rx="2" ry="1.2" fill="#EC4899" opacity="0.3"/><ellipse cx="16" cy="16" rx="14" ry="9" fill="none" stroke="#475569" stroke-width="0.8"/></svg>`
+  },
+  {
+    id: 'panspermia',
+    name: 'Panspermia — Seeds of Life',
+    category: 'mysteries',
+    path: '/svgs/mysteries/panspermia.svg',
+    tags: ['panspermia', 'seeds of life', 'comet life', 'amino acid', 'interstellar biology', 'cosmic origin'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><linearGradient id="comet-pan" x1="4" y1="4" x2="20" y2="20" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#7DD3FC"/></linearGradient></defs><ellipse cx="10" cy="10" rx="5" ry="3" fill="url(#comet-pan)" stroke="#BAE6FD" stroke-width="0.8" transform="rotate(-45 10 10)"/><path d="M13 13 Q20 16 28 12" stroke="#BAE6FD" stroke-width="0.7" fill="none" opacity="0.7"/><path d="M13 13 Q21 18 29 16" stroke="#7DD3FC" stroke-width="0.5" fill="none" opacity="0.5"/><circle cx="21" cy="22" r="3" fill="#10B981" stroke="#34D399" stroke-width="0.8"/><circle cx="21" cy="22" r="1.5" fill="#065F46" stroke="#10B981" stroke-width="0.5"/><circle cx="27" cy="18" r="1.5" fill="#10B981" stroke="#34D399" stroke-width="0.6" opacity="0.7"/><circle cx="25" cy="26" r="1.2" fill="#059669" stroke="#34D399" stroke-width="0.5" opacity="0.6"/><circle cx="8" cy="8" r="1" fill="#FFFFFF" opacity="0.8"/></svg>`
+  },
+  {
+    id: 'spacetime-warp',
+    name: 'Spacetime Curvature Warp',
+    category: 'mysteries',
+    path: '/svgs/mysteries/spacetime-warp.svg',
+    tags: ['spacetime warp', 'gravity well', 'curvature', 'general relativity', 'mass warping', 'einstein'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><path d="M2 8 Q16 8 30 8" stroke="#334155" stroke-width="0.5" fill="none"/><path d="M2 12 Q8 12 16 20 Q24 28 30 28" stroke="#38BDF8" stroke-width="0.6" fill="none" opacity="0.7"/><path d="M2 10 Q9 10 16 17 Q23 24 30 24" stroke="#38BDF8" stroke-width="0.7" fill="none" opacity="0.8"/><path d="M2 8 Q10 8 16 14 Q22 20 30 20" stroke="#7DD3FC" stroke-width="0.5" fill="none"/><path d="M2 6 Q12 6 16 11 Q20 16 30 16" stroke="#38BDF8" stroke-width="0.5" fill="none" opacity="0.6"/><path d="M8 2 Q8 10 16 16" stroke="#334155" stroke-width="0.5" fill="none"/><path d="M14 2 Q14 8 16 14" stroke="#334155" stroke-width="0.5" fill="none"/><path d="M20 2 Q20 6 18 12" stroke="#334155" stroke-width="0.5" fill="none"/><path d="M26 2 Q26 5 22 10" stroke="#334155" stroke-width="0.5" fill="none"/><circle cx="16" cy="16" r="4" fill="#0F172A" stroke="#7C3AED" stroke-width="1.2"/><circle cx="16" cy="16" r="2" fill="#7C3AED" opacity="0.8"/></svg>`
+  },
+  {
+    id: 'ufo-abduction',
+    name: 'UFO Abduction Beam',
+    category: 'mysteries',
+    path: '/svgs/mysteries/ufo-abduction.svg',
+    tags: ['ufo abduction', 'tractor beam', 'alien abduction', 'levitation', 'close encounter'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><linearGradient id="abduct-beam" x1="16" y1="12" x2="16" y2="30" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#22C55E" stop-opacity="0.9"/><stop offset="100%" stop-color="#22C55E" stop-opacity="0"/></linearGradient></defs><ellipse cx="16" cy="10" rx="11" ry="3.5" fill="#64748B" stroke="#94A3B8" stroke-width="0.8"/><path d="M12 7C12 3.5 13.5 2 16 2C18.5 2 20 3.5 20 7Z" fill="#475569" stroke="#94A3B8" stroke-width="0.7"/><circle cx="10" cy="10.5" r="0.9" fill="#22C55E"/><circle cx="14" cy="12" r="0.9" fill="#FDE047"/><circle cx="18" cy="12" r="0.9" fill="#22C55E"/><circle cx="22" cy="10.5" r="0.9" fill="#FDE047"/><polygon points="10,13 22,13 26,30 6,30" fill="url(#abduct-beam)"/><ellipse cx="16" cy="26" rx="3" ry="1.5" fill="#1E293B" stroke="#22C55E" stroke-width="0.6"/><circle cx="16" cy="24" r="2" fill="#4B5563" stroke="#6B7280" stroke-width="0.5"/></svg>`
+  },
+  {
+    id: 'great-attractor',
+    name: 'The Great Attractor',
+    category: 'mysteries',
+    path: '/svgs/mysteries/great-attractor.svg',
+    tags: ['great attractor', 'gravity anomaly', 'laniakea', 'norma cluster', 'hidden mass', 'cosmic flow'],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="attractor" cx="16" cy="16" r="12" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#F59E0B" stop-opacity="0.9"/><stop offset="30%" stop-color="#7C3AED" stop-opacity="0.4"/><stop offset="100%" stop-color="#0F172A" stop-opacity="0"/></radialGradient></defs><circle cx="16" cy="16" r="12" fill="url(#attractor)"/><circle cx="16" cy="16" r="3" fill="#FDE047" stroke="#F59E0B" stroke-width="1"/><path d="M4 4 Q10 10 14 14" stroke="#A78BFA" stroke-width="0.7" fill="none"/><path d="M28 4 Q22 10 18 14" stroke="#A78BFA" stroke-width="0.7" fill="none"/><path d="M4 28 Q10 22 14 18" stroke="#A78BFA" stroke-width="0.7" fill="none"/><path d="M28 28 Q22 22 18 18" stroke="#A78BFA" stroke-width="0.7" fill="none"/><path d="M16 3 Q16 9 16 13" stroke="#C4B5FD" stroke-width="0.7" fill="none"/><path d="M16 19 Q16 23 16 29" stroke="#C4B5FD" stroke-width="0.7" fill="none"/><path d="M3 16 Q9 16 13 16" stroke="#C4B5FD" stroke-width="0.7" fill="none"/><path d="M19 16 Q23 16 29 16" stroke="#C4B5FD" stroke-width="0.7" fill="none"/><circle cx="5" cy="5" r="1.2" fill="#818CF8"/><circle cx="27" cy="5" r="1.2" fill="#818CF8"/><circle cx="5" cy="27" r="1.2" fill="#818CF8"/><circle cx="27" cy="27" r="1.2" fill="#818CF8"/></svg>`
   }
 ];

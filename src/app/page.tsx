@@ -15,12 +15,13 @@ import { IconGrid } from '../components/IconGrid';
 import { IconModal } from '../components/IconModal';
 import { ToastContainer, ToastMessage } from '../components/ToastContainer';
 import { downloadAllSvgsZip, generateSpriteSheet } from '../lib/exportUtils';
+import { SeoShowcase } from '../components/SeoShowcase';
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [currentCategory, setCurrentCategory] = useState<string>('all');
-  const [frameStyle, setFrameStyle] = useState<FrameStyle>('circle');
-  const [iconSize, setIconSize] = useState<IconSize>('28');
+  const [frameStyle, setFrameStyle] = useState<FrameStyle>('raw');
+  const [iconSize, setIconSize] = useState<IconSize>('128');
   const [themeBg, setThemeBg] = useState<ThemeBg>('void');
   const [selectedIcon, setSelectedIcon] = useState<SpaceIcon | null>(null);
   const [toasts, setToasts] = useState<ToastMessage[]>([]);
@@ -113,9 +114,11 @@ export default function Home() {
           }}
         />
 
+        <SeoShowcase />
+
         <footer className="site-footer">
           <div className="footer-content">
-            <p>Crafted with precision • 64 Vector Space Icons • 32×32 viewBox</p>
+            <p>Crafted with precision • 84 Vector Space Icons • 32×32 viewBox</p>
             <div className="footer-meta">
               <span>Clean Geometric Paths</span> • <span>Gradient Defs</span> • <span>Pixel-Grid Aligned</span> • <span>Scalable 16px – 128px+</span>
             </div>
