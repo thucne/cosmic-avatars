@@ -851,11 +851,11 @@ export const SPACE_ICONS: SpaceIcon[] = [
     svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><line x1="28" y1="4" x2="16" y2="16" stroke="#00F0FF" stroke-width="1.8" stroke-linecap="round"/><circle cx="16" cy="16" r="1" fill="#FFFFFF"/><line x1="22" y1="12" x2="8" y2="26" stroke="#FDE047" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="26" r="1" fill="#FFFFFF"/><line x1="18" y1="2" x2="6" y2="14" stroke="#EC4899" stroke-width="1.2" stroke-linecap="round"/><circle cx="6" cy="14" r="0.8" fill="#FFFFFF"/><line x1="30" y1="16" x2="18" y2="28" stroke="#38BDF8" stroke-width="1.2" stroke-linecap="round"/><circle cx="18" cy="28" r="0.8" fill="#FFFFFF"/></svg>`
   },
   {
-    id: 'asteroid-belt',
-    name: 'Asteroid Belt Cluster',
+    id: 'asteroid-cluster',
+    name: 'Asteroid Cluster',
     category: 'mysteries',
-    path: '/svgs/mysteries/asteroid-belt.svg',
-    tags: ["asteroid","meteorite","space rock","kuiper","orbit","debris"],
+    path: '/svgs/mysteries/asteroid-cluster.svg',
+    tags: ["asteroid", "meteorite", "space rock", "kuiper", "orbit", "debris"],
     description: `A vast ring of rocky and metallic planetesimals orbiting between Mars and Jupiter. Containing millions of asteroids, it represents primeval leftover building blocks from the birth of our solar system.`,
     svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><linearGradient id="rock-grad" x1="4" y1="4" x2="28" y2="28" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#94A3B8"/><stop offset="60%" stop-color="#475569"/><stop offset="100%" stop-color="#1E293B"/></linearGradient></defs><ellipse cx="16" cy="16" rx="14" ry="7" stroke="#64748B" stroke-width="0.8" stroke-dasharray="2 2" fill="none" transform="rotate(-20 16 16)" opacity="0.4"/><polygon points="12,10 18,8 22,12 20,18 14,19 9,15" fill="url(#rock-grad)" stroke="#CBD5E1" stroke-width="0.8"/><circle cx="14" cy="12" r="1.2" fill="#334155"/><circle cx="18" cy="15" r="1" fill="#334155"/><polygon points="4,18 7,16 9,19 7,22 4,21" fill="url(#rock-grad)" stroke="#94A3B8" stroke-width="0.6"/><polygon points="24,19 27,17 29,20 27,22 25,21" fill="url(#rock-grad)" stroke="#94A3B8" stroke-width="0.6"/><circle cx="22" cy="7" r="1.2" fill="#CBD5E1"/><circle cx="8" cy="8" r="0.9" fill="#94A3B8"/><circle cx="15" cy="25" r="1" fill="#94A3B8"/></svg>`
   },
@@ -943,10 +943,10 @@ export const SPACE_ICONS: SpaceIcon[] = [
     svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="cme-sun" cx="16" cy="28" r="12" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="40%" stop-color="#FDE047"/><stop offset="80%" stop-color="#F97316"/><stop offset="100%" stop-color="#7C2D12"/></radialGradient></defs><path d="M4 32A12 12 0 0 1 28 32" fill="url(#cme-sun)"/><path d="M10 22C10 12 26 2 26 2C26 2 30 16 20 22" stroke="#FDE047" stroke-width="2.5" stroke-linecap="round" fill="none"/><path d="M10 22C10 12 26 2 26 2C26 2 28 14 20 22" stroke="#F97316" stroke-width="1" stroke-linecap="round" fill="none"/><path d="M16 14C14 10 18 4 22 4" stroke="#FFFFFF" stroke-width="0.9" stroke-linecap="round" fill="none" opacity="0.6"/></svg>`
   },
   {
-    id: 'meteor-shower',
+    id: 'meteor-shower-radiant',
     name: 'Meteor Shower Radiant',
     category: 'solar-system',
-    path: '/svgs/solar-system/meteor-shower.svg',
+    path: '/svgs/solar-system/meteor-shower-radiant.svg',
     tags: ['meteor shower', 'perseid', 'leonid', 'shooting stars', 'radiant', 'meteoroid'],
     description: 'Every year Earth plows through comet debris trails, producing meteor showers. All meteors appear to radiate from a single vanishing point in the sky — the radiant — named after the constellation they seem to originate from.',
     svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="16" cy="16" r="2" fill="#FEF08A"/><line x1="16" y1="16" x2="28" y2="4" stroke="#FEF08A" stroke-width="1.4" stroke-linecap="round"/><line x1="16" y1="16" x2="30" y2="12" stroke="#FDE047" stroke-width="1.2" stroke-linecap="round"/><line x1="16" y1="16" x2="30" y2="20" stroke="#FDE047" stroke-width="1.2" stroke-linecap="round"/><line x1="16" y1="16" x2="28" y2="26" stroke="#FEF08A" stroke-width="1.4" stroke-linecap="round"/><line x1="16" y1="16" x2="22" y2="30" stroke="#F97316" stroke-width="1" stroke-linecap="round"/><line x1="16" y1="16" x2="12" y2="30" stroke="#F97316" stroke-width="1" stroke-linecap="round"/><line x1="16" y1="16" x2="4" y2="28" stroke="#FEF08A" stroke-width="1.4" stroke-linecap="round"/><line x1="16" y1="16" x2="2" y2="22" stroke="#FDE047" stroke-width="1" stroke-linecap="round"/><circle cx="24" cy="8" r="1" fill="#FFFFFF"/><circle cx="29" cy="16" r="0.8" fill="#FFFFFF"/><circle cx="24" cy="25" r="1" fill="#FFFFFF"/></svg>`
@@ -1210,10 +1210,10 @@ export const SPACE_ICONS: SpaceIcon[] = [
     svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="kn-glow" cx="16" cy="16" r="10" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="30%" stop-color="#FDE047"/><stop offset="65%" stop-color="#F97316"/><stop offset="100%" stop-color="#0F172A" stop-opacity="0"/></radialGradient></defs><circle cx="16" cy="16" r="10" fill="url(#kn-glow)"/><path d="M16 16L22 10" stroke="#E0F2FE" stroke-width="1.5" stroke-dasharray="2 1" stroke-linecap="round"/><path d="M16 16L10 22" stroke="#E0F2FE" stroke-width="1.5" stroke-dasharray="2 1" stroke-linecap="round"/><circle cx="23" cy="9" r="2.5" fill="#E2E8F0" stroke="#94A3B8" stroke-width="0.8"/><circle cx="9" cy="23" r="2.5" fill="#94A3B8" stroke="#64748B" stroke-width="0.8"/><path d="M2 26C4 20 6 16 8 14M22 2C22 8 20 12 18 14" stroke="#FDE047" stroke-width="0.8" stroke-linecap="round" opacity="0.7"/></svg>`
   },
   {
-    id: 'gamma-ray-burst',
+    id: 'gamma-ray-burst-jet',
     name: 'Gamma-Ray Burst Jet',
     category: 'mysteries',
-    path: '/svgs/mysteries/gamma-ray-burst.svg',
+    path: '/svgs/mysteries/gamma-ray-burst-jet.svg',
     tags: ['gamma-ray burst', 'GRB', 'collapsar', 'relativistic jet', 'afterglow', 'most energetic explosion'],
     description: 'The most energetic explosions in the universe since the Big Bang — releasing more energy in seconds than the Sun will emit in its entire lifetime. Long GRBs mark the death of massive stars collapsing into black holes, firing twin relativistic jets that briefly outshine the entire observable universe.',
     svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="16" cy="16" r="3.5" fill="#FFFFFF" stroke="#EF4444" stroke-width="1"/><polygon points="16,12 13,2 19,2" fill="#EF4444"/><polygon points="16,12 10,4 14,4" fill="#F97316" opacity="0.7"/><polygon points="16,12 22,4 18,4" fill="#F97316" opacity="0.7"/><polygon points="16,20 13,30 19,30" fill="#EF4444"/><polygon points="16,20 10,28 14,28" fill="#F97316" opacity="0.7"/><polygon points="16,20 22,28 18,28" fill="#F97316" opacity="0.7"/><circle cx="16" cy="2" r="1.5" fill="#FEF08A"/><circle cx="16" cy="30" r="1.5" fill="#FEF08A"/></svg>`
