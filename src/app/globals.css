@@ -691,6 +691,31 @@ body {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 240, 255, 0.15);
 }
 
+.icon-number-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-family: var(--font-fira-code), monospace;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.45);
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1px 6px;
+  border-radius: 5px;
+  backdrop-filter: blur(4px);
+  pointer-events: none;
+  transition: var(--transition);
+  z-index: 2;
+}
+
+.icon-card:hover .icon-number-badge {
+  color: var(--primary-cyan);
+  border-color: rgba(0, 240, 255, 0.35);
+  background: rgba(15, 23, 42, 0.9);
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+}
+
 /* Avatar Frame Container inside card */
 .avatar-frame {
   display: flex;

@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
-import { SpaceIcon, ICON_CATEGORIES } from '../data/iconsData';
+import { SpaceIcon, ICON_CATEGORIES, SPACE_ICONS } from '../data/iconsData';
 import { FrameStyle, ThemeBg } from './ControlsBar';
 import { downloadSvgFile } from '../lib/exportUtils';
 
@@ -80,6 +80,8 @@ export const IconModal: React.FC<IconModalProps> = ({
   if (!icon) return null;
 
   const categoryName = ICON_CATEGORIES.find((c) => c.id === icon.category)?.name || icon.category;
+  const iconIndex = SPACE_ICONS.findIndex((i) => i.id === icon.id) + 1;
+  const totalIcons = SPACE_ICONS.length;
 
   const generateCodeSnippet = (tab: CodeTab): string => {
     switch (tab) {
@@ -162,7 +164,7 @@ export const Icon${componentName}: React.FC<React.SVGProps<SVGSVGElement>> = (pr
           {/* Right Column: Details & Code Exporter */}
           <div className="modal-info-col">
             <div className="modal-header-info">
-              <span className="modal-category">{categoryName}</span>
+              <span className="modal-category">{categoryName} • Icon #{iconIndex} of {totalIcons}</span>
               <h2 id="modal-title" className="modal-title">{icon.name}</h2>
               <p className="modal-path">{icon.path}</p>
               {icon.description && (

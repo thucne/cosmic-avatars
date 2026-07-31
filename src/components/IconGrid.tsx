@@ -1,24 +1,26 @@
-'use client';
-
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { SpaceIcon } from '../data/iconsData';
+import { SpaceIcon, SPACE_ICONS } from '../data/iconsData';
 import { FrameStyle, ThemeBg, IconSize } from './ControlsBar';
 
 interface IconCardProps {
   icon: SpaceIcon;
+  iconIndex: number;
   onSelectIcon: (icon: SpaceIcon) => void;
   onCopySvg?: (svg: string, name: string) => void;
   copiedIconId: string | null;
   handleQuickCopy: (e: React.MouseEvent, icon: SpaceIcon) => void;
 }
 
-const IconCard = React.memo(({ icon, onSelectIcon, onCopySvg, copiedIconId, handleQuickCopy }: IconCardProps) => {
+const IconCard = React.memo(({ icon, iconIndex, onSelectIcon, onCopySvg, copiedIconId, handleQuickCopy }: IconCardProps) => {
   const isCopied = copiedIconId === icon.id;
+  const formattedNumber = `#${String(iconIndex).padStart(2, '0')}`;
+
   return (
     <div
       className="icon-card glass-card"
       onClick={() => onSelectIcon(icon)}
     >
+      <span className="icon-number-badge">{formattedNumber}</span>
       <div className="avatar-frame">
         <div
           className="svg-wrapper"
@@ -73,6 +75,11 @@ export const IconGrid: React.FC<IconGridProps> = ({
   const [copiedIconId, setCopiedIconId] = useState<string | null>(null);
   const copyTimerRef = useRef<NodeJS.Timeout | null>(null);
 
+  // Map for fast index lookup in global SPACE_ICONS
+  const globalIndexMap = useRef<Map<string, number>>(
+    new Map(SPACE_ICONS.map((icon, idx) => [icon.id, idx + 1]))
+  );
+
   useEffect(() => {
     return () => {
       if (copyTimerRef.current) {
@@ -113,6 +120,7 @@ export const IconGrid: React.FC<IconGridProps> = ({
           <IconCard
             key={icon.id}
             icon={icon}
+            iconIndex={globalIndexMap.current.get(icon.id) || 1}
             onSelectIcon={onSelectIcon}
             onCopySvg={onCopySvg}
             copiedIconId={copiedIconId}
