@@ -165,6 +165,9 @@ export const Icon${componentName}: React.FC<React.SVGProps<SVGSVGElement>> = (pr
               <span className="modal-category">{categoryName}</span>
               <h2 id="modal-title" className="modal-title">{icon.name}</h2>
               <p className="modal-path">{icon.path}</p>
+              {icon.description && (
+                <p className="modal-description">{icon.description}</p>
+              )}
             </div>
 
             {/* Code Format Selector Tabs */}
