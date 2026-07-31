@@ -661,15 +661,6 @@ export const SPACE_ICONS: SpaceIcon[] = [
     svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="10" cy="7" r="1.4" fill="#FEF08A"/><circle cx="22" cy="6" r="1.8" fill="#F87171"/><circle cx="7" cy="14" r="1.2" fill="#BAE6FD"/><circle cx="25" cy="13" r="1.2" fill="#BAE6FD"/><circle cx="12" cy="17" r="1.4" fill="#FDE047"/><circle cx="16" cy="17" r="1.4" fill="#FDE047"/><circle cx="20" cy="17" r="1.4" fill="#FDE047"/><circle cx="8" cy="24" r="1.8" fill="#93C5FD"/><circle cx="24" cy="25" r="1.4" fill="#BAE6FD"/><line x1="10" y1="7" x2="22" y2="6" stroke="#475569" stroke-width="0.5" opacity="0.6"/><line x1="10" y1="7" x2="7" y2="14" stroke="#475569" stroke-width="0.5" opacity="0.6"/><line x1="22" y1="6" x2="25" y2="13" stroke="#475569" stroke-width="0.5" opacity="0.6"/><line x1="7" y1="14" x2="12" y2="17" stroke="#475569" stroke-width="0.5" opacity="0.6"/><line x1="25" y1="13" x2="20" y2="17" stroke="#475569" stroke-width="0.5" opacity="0.6"/><line x1="12" y1="17" x2="8" y2="24" stroke="#475569" stroke-width="0.5" opacity="0.6"/><line x1="20" y1="17" x2="24" y2="25" stroke="#475569" stroke-width="0.5" opacity="0.6"/><circle cx="16" cy="22" r="0.8" fill="#A5F3FC" opacity="0.8"/></svg>`
   },
   {
-    id: 'alien-radio-signal',
-    name: 'Alien Radio Signal (WOW!)',
-    category: 'mysteries',
-    path: '/svgs/mysteries/alien-radio-signal.svg',
-    tags: ['wow signal', 'seti', 'alien transmission', 'radio wave', 'extraterrestrial', 'contact'],
-    description: `On 15 August 1977, the Big Ear radio telescope recorded a 72-second signal so striking that astronomer Jerry Ehman circled it and wrote Wow! in the margin. It has never been detected again, and its origin remains unknown.`,
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><path d="M2 16 Q5 10 8 16 Q11 22 14 16 Q17 10 20 16 Q23 22 26 16 Q29 10 30 16" stroke="#22C55E" stroke-width="1.5" fill="none"/><path d="M2 16 Q5 12 8 16 Q11 20 14 16 Q17 12 20 16 Q23 20 26 16 Q29 12 30 16" stroke="#00F0FF" stroke-width="0.6" fill="none" opacity="0.5"/><circle cx="16" cy="16" r="3" fill="none" stroke="#22C55E" stroke-width="1" stroke-dasharray="1 1"/><circle cx="16" cy="16" r="1.2" fill="#22C55E"/><line x1="16" y1="4" x2="16" y2="7" stroke="#22C55E" stroke-width="1.2"/><line x1="16" y1="25" x2="16" y2="28" stroke="#22C55E" stroke-width="1.2"/></svg>`
-  },
-  {
     id: 'dark-energy-expansion',
     name: 'Dark Energy Universe Expansion',
     category: 'mysteries',
