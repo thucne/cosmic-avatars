@@ -7,7 +7,7 @@ export interface IconCategory {
 export interface SpaceIcon {
   id: string;
   name: string;
-  category: 'solar-system' | 'deep-sky' | 'technology' | 'mysteries';
+  category: 'solar-system' | 'deep-sky' | 'technology' | 'mysteries' | 'stellar';
   path: string;
   tags: string[];
   description?: string;
@@ -16,10 +16,11 @@ export interface SpaceIcon {
 
 export const ICON_CATEGORIES: IconCategory[] = [
   { id: 'all', name: 'All Space Icons', icon: '✨' },
-  { id: 'solar-system', name: 'Solar System & Stars', icon: '🪐' },
-  { id: 'deep-sky', name: 'Deep Sky & Galaxies', icon: '🌌' },
+  { id: 'solar-system', name: 'Solar System & Planetary', icon: '🪐' },
+  { id: 'deep-sky', name: 'Galaxies & Structure', icon: '🌌' },
+  { id: 'stellar', name: 'Stars & Nebulae', icon: '⭐' },
   { id: 'technology', name: 'Spacecraft & Tech', icon: '🚀' },
-  { id: 'mysteries', name: 'UFOs & Constellations', icon: '🛸' }
+  { id: 'mysteries', name: 'Phenomena & Events', icon: '🌀' }
 ];
 
 export const SPACE_ICONS: SpaceIcon[] = [
@@ -902,5 +903,347 @@ export const SPACE_ICONS: SpaceIcon[] = [
     tags: ["cosmic eye","god eye","helix nebula","singularity","eye","universe"],
     description: `A poetic moniker for gravitational singularities and cosmic structures like the Helix Nebula ('Eye of God'), where extreme curvature of spacetime bends light into cosmic iris formations.`,
     svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="eye-iris" cx="16" cy="16" r="6" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="40%" stop-color="#00F0FF"/><stop offset="75%" stop-color="#A855F7"/><stop offset="100%" stop-color="#0F172A"/></radialGradient></defs><path d="M2 16C6 8 26 8 30 16C26 24 6 24 2 16Z" fill="#1E1B4B" stroke="#38BDF8" stroke-width="1.2"/><circle cx="16" cy="16" r="7" fill="url(#eye-iris)"/><circle cx="16" cy="16" r="3" fill="#030712"/><circle cx="14.8" cy="14.8" r="1" fill="#FFFFFF"/></svg>`
+  },
+
+  // ── Solar System & Planetary (9 new) ──────────────────────────────────────
+  {
+    id: 'classic-comet',
+    name: 'Classic Comet',
+    category: 'solar-system',
+    path: '/svgs/solar-system/classic-comet.svg',
+    tags: ['comet', 'halley', 'nucleus', 'tail', 'dust tail', 'ion tail', 'coma'],
+    description: `A frozen time capsule from the solar system's formation, a comet nucleus of ice and rock grows a glowing coma and three distinct tails — dust, ion, and anti-tail — as solar radiation sculpts it in flight.`,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="comet-coma" cx="10" cy="22" r="5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="60%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#0F172A" stop-opacity="0"/></radialGradient></defs><path d="M10 22C14 16 20 12 28 10" stroke="#7DD3FC" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/><path d="M10 22C15 14 22 10 30 6" stroke="#A5F3FC" stroke-width="1" stroke-linecap="round" opacity="0.6"/><path d="M10 22C12 16 16 12 22 8" stroke="#E0F2FE" stroke-width="0.8" stroke-linecap="round" opacity="0.4"/><circle cx="10" cy="22" r="5" fill="url(#comet-coma)"/><path d="M7 20C8 18 10 18 12 19C13 21 12 23 10 24C8 24 6 22 7 20Z" fill="#E2E8F0" stroke="#94A3B8" stroke-width="0.6"/><circle cx="9" cy="20" r="0.8" fill="#64748B"/></svg>`
+  },
+  {
+    id: 'great-red-spot',
+    name: "Jupiter's Great Red Spot",
+    category: 'solar-system',
+    path: '/svgs/solar-system/great-red-spot.svg',
+    tags: ['jupiter', 'great red spot', 'storm', 'gas giant', 'bands', 'anticyclone'],
+    description: `A monstrous anticyclone wider than Earth that has raged on Jupiter for at least 350 years. Its deep crimson color comes from complex organic compounds dredged up from the planet's depths by the towering storm.`,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><linearGradient id="jup-bg" x1="16" y1="3" x2="16" y2="29" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#451A03"/><stop offset="30%" stop-color="#D97706"/><stop offset="55%" stop-color="#FEF08A"/><stop offset="80%" stop-color="#B45309"/><stop offset="100%" stop-color="#451A03"/></linearGradient></defs><circle cx="16" cy="16" r="13" fill="url(#jup-bg)"/><path d="M3 11h26M3 17h26M3 22h26" stroke="#78350F" stroke-width="1.5" opacity="0.5"/><ellipse cx="19" cy="19" rx="6" ry="3.5" fill="#DC2626" stroke="#EF4444" stroke-width="0.8"/><ellipse cx="19" cy="19" rx="4" ry="2" fill="#B91C1C"/><ellipse cx="19" cy="19" rx="2" ry="1" fill="#7F1D1D"/></svg>`
+  },
+  {
+    id: 'asteroid-belt',
+    name: 'Asteroid Belt',
+    category: 'solar-system',
+    path: '/svgs/solar-system/asteroid-belt.svg',
+    tags: ['asteroid belt', 'asteroids', 'main belt', 'ceres', 'vesta', 'orbit'],
+    description: `A vast ring of rocky remnants between Mars and Jupiter — debris left over from the solar system's formation that Jupiter's gravity prevented from coalescing into a full planet.`,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="16" cy="16" r="3" fill="#FEF08A" stroke="#F59E0B" stroke-width="0.8"/><ellipse cx="16" cy="16" rx="13" ry="13" fill="none" stroke="#334155" stroke-width="0.5" stroke-dasharray="1 1"/><g fill="#94A3B8" opacity="0.9"><rect x="2" y="14" width="2.5" height="1.5" rx="0.5" transform="rotate(-20 3 15)"/><rect x="27" y="14" width="2" height="1.8" rx="0.5" transform="rotate(15 28 15)"/><rect x="14" y="1.5" width="1.8" height="2" rx="0.5" transform="rotate(40 15 2)"/><rect x="13.5" y="27.5" width="2.2" height="1.5" rx="0.5" transform="rotate(-30 14 28)"/><rect x="4" y="6" width="1.5" height="1.5" rx="0.5" transform="rotate(60 5 7)"/><rect x="25" y="6" width="2" height="1.2" rx="0.5" transform="rotate(-45 26 7)"/><rect x="4" y="24" width="1.8" height="1.5" rx="0.5" transform="rotate(30 5 25)"/><rect x="25" y="24" width="1.5" height="1.8" rx="0.5" transform="rotate(-60 26 25)"/><circle cx="9" cy="4" r="0.8"/><circle cx="23" cy="4" r="0.8"/><circle cx="9" cy="28" r="0.8"/><circle cx="23" cy="28" r="0.8"/></g></svg>`
+  },
+  {
+    id: 'solar-cme',
+    name: 'Solar Coronal Mass Ejection',
+    category: 'solar-system',
+    path: '/svgs/solar-system/solar-cme.svg',
+    tags: ['CME', 'solar flare', 'coronal mass ejection', 'plasma', 'solar storm', 'aurora'],
+    description: `A colossal eruption of magnetized plasma from the Sun's corona — billions of tonnes of charged particles flung into space at millions of kilometers per hour. When directed at Earth, CMEs trigger stunning auroras and can disrupt satellites and power grids.`,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="cme-sun" cx="16" cy="28" r="12" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="40%" stop-color="#FDE047"/><stop offset="80%" stop-color="#F97316"/><stop offset="100%" stop-color="#7C2D12"/></radialGradient></defs><path d="M4 32A12 12 0 0 1 28 32" fill="url(#cme-sun)"/><path d="M10 22C10 12 26 2 26 2C26 2 30 16 20 22" stroke="#FDE047" stroke-width="2.5" stroke-linecap="round" fill="none"/><path d="M10 22C10 12 26 2 26 2C26 2 28 14 20 22" stroke="#F97316" stroke-width="1" stroke-linecap="round" fill="none"/><path d="M16 14C14 10 18 4 22 4" stroke="#FFFFFF" stroke-width="0.9" stroke-linecap="round" fill="none" opacity="0.6"/></svg>`
+  },
+  {
+    id: 'meteor-shower',
+    name: 'Meteor Shower Radiant',
+    category: 'solar-system',
+    path: '/svgs/solar-system/meteor-shower.svg',
+    tags: ['meteor shower', 'perseid', 'leonid', 'shooting stars', 'radiant', 'meteoroid'],
+    description: 'Every year Earth plows through comet debris trails, producing meteor showers. All meteors appear to radiate from a single vanishing point in the sky — the radiant — named after the constellation they seem to originate from.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="16" cy="16" r="2" fill="#FEF08A"/><line x1="16" y1="16" x2="28" y2="4" stroke="#FEF08A" stroke-width="1.4" stroke-linecap="round"/><line x1="16" y1="16" x2="30" y2="12" stroke="#FDE047" stroke-width="1.2" stroke-linecap="round"/><line x1="16" y1="16" x2="30" y2="20" stroke="#FDE047" stroke-width="1.2" stroke-linecap="round"/><line x1="16" y1="16" x2="28" y2="26" stroke="#FEF08A" stroke-width="1.4" stroke-linecap="round"/><line x1="16" y1="16" x2="22" y2="30" stroke="#F97316" stroke-width="1" stroke-linecap="round"/><line x1="16" y1="16" x2="12" y2="30" stroke="#F97316" stroke-width="1" stroke-linecap="round"/><line x1="16" y1="16" x2="4" y2="28" stroke="#FEF08A" stroke-width="1.4" stroke-linecap="round"/><line x1="16" y1="16" x2="2" y2="22" stroke="#FDE047" stroke-width="1" stroke-linecap="round"/><circle cx="24" cy="8" r="1" fill="#FFFFFF"/><circle cx="29" cy="16" r="0.8" fill="#FFFFFF"/><circle cx="24" cy="25" r="1" fill="#FFFFFF"/></svg>`
+  },
+  {
+    id: 'planetary-transit',
+    name: 'Planetary Transit',
+    category: 'solar-system',
+    path: '/svgs/solar-system/planetary-transit.svg',
+    tags: ['transit', 'exoplanet', 'kepler', 'venus transit', 'mercury transit', 'occultation'],
+    description: 'When a planet passes directly between us and the Sun, it casts a tiny shadow — a transit. The Kepler space telescope detected over 2,600 exoplanets using exactly this method, watching stars wink slightly dimmer as unseen worlds crossed their faces.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="transit-star" cx="16" cy="16" r="13" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFFBEB"/><stop offset="70%" stop-color="#FDE047"/><stop offset="100%" stop-color="#D97706"/></radialGradient></defs><circle cx="16" cy="16" r="13" fill="url(#transit-star)" stroke="#F59E0B" stroke-width="0.5"/><path d="M8 16C8 13 10 11 13 10L25 10" stroke="#0F172A" stroke-width="0.6" stroke-dasharray="1.5 1.5" opacity="0.4"/><circle cx="11" cy="13" r="3.5" fill="#1E3A8A" stroke="#38BDF8" stroke-width="0.8"/><ellipse cx="11" cy="13" rx="3.5" ry="3.5" fill="none" stroke="#FFFFFF" stroke-width="0.4" opacity="0.3"/></svg>`
+  },
+  {
+    id: 'sunspot-group',
+    name: 'Solar Sunspot Group',
+    category: 'solar-system',
+    path: '/svgs/solar-system/sunspot-group.svg',
+    tags: ['sunspot', 'solar activity', 'umbra', 'penumbra', 'solar cycle', 'magnetic field'],
+    description: `Dark, magnetically intense regions on the Sun's surface where powerful field lines inhibit convection and cool the plasma to ~3,500°C — still glowing white-hot, but dark compared to the surrounding 5,500°C photosphere.`,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="spot-sun" cx="16" cy="16" r="13" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FEF08A"/><stop offset="60%" stop-color="#F59E0B"/><stop offset="100%" stop-color="#D97706"/></radialGradient></defs><circle cx="16" cy="16" r="13" fill="url(#spot-sun)"/><ellipse cx="12" cy="13" rx="4" ry="3" fill="#78350F"/><ellipse cx="12" cy="13" rx="2.5" ry="1.8" fill="#1C0A00"/><ellipse cx="20" cy="18" rx="4.5" ry="3.2" fill="#78350F"/><ellipse cx="20" cy="18" rx="2.8" ry="2" fill="#1C0A00"/><ellipse cx="12" cy="21" rx="2.2" ry="1.6" fill="#92400E"/><ellipse cx="12" cy="21" rx="1.3" ry="1" fill="#1C0A00"/></svg>`
+  },
+  {
+    id: 'planetary-magnetic-field',
+    name: 'Planetary Magnetic Dipole',
+    category: 'solar-system',
+    path: '/svgs/solar-system/planetary-magnetic-field.svg',
+    tags: ['magnetic field', 'magnetosphere', 'dipole', 'aurora', 'Van Allen belts', 'field lines'],
+    description: `Earth's liquid iron outer core generates a magnetic dipole field that shields the biosphere from deadly solar wind. Without it, the Sun would strip away our atmosphere — as it did to Mars over billions of years.`,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="16" cy="16" r="5" fill="#1E40AF" stroke="#60A5FA" stroke-width="1.2"/><path d="M16 11C16 7 20 4 23 6C26 8 26 14 24 18C22 22 18 24 16 21" stroke="#38BDF8" stroke-width="1.2" fill="none"/><path d="M16 11C16 7 12 4 9 6C6 8 6 14 8 18C10 22 14 24 16 21" stroke="#38BDF8" stroke-width="1.2" fill="none"/><path d="M16 9C16 5 22 2 26 5C30 8 30 16 27 21C24 26 20 28 16 23" stroke="#7DD3FC" stroke-width="0.7" fill="none" opacity="0.7"/><path d="M16 9C16 5 10 2 6 5C2 8 2 16 5 21C8 26 12 28 16 23" stroke="#7DD3FC" stroke-width="0.7" fill="none" opacity="0.7"/><line x1="16" y1="1" x2="16" y2="31" stroke="#FDE047" stroke-width="0.6" stroke-dasharray="2 2" opacity="0.5"/></svg>`
+  },
+  {
+    id: 'polar-aurora',
+    name: 'Polar Aurora',
+    category: 'solar-system',
+    path: '/svgs/solar-system/polar-aurora.svg',
+    tags: ['aurora borealis', 'aurora australis', 'northern lights', 'solar wind', 'ionosphere', 'plasma'],
+    description: 'When charged solar wind particles funnel down magnetic field lines into the polar atmosphere, they excite oxygen and nitrogen atoms into releasing cascades of photons — painting the night sky green, red, and violet in shimmering curtains of light.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><path d="M2 28A14 14 0 0 1 30 28" fill="#0F172A" stroke="#1E293B" stroke-width="0.5"/><path d="M4 24C5 16 7 10 8 4" stroke="#34D399" stroke-width="2.5" stroke-linecap="round"/><path d="M9 24C10 17 11 11 12 5" stroke="#22D3EE" stroke-width="2.2" stroke-linecap="round"/><path d="M14 24C14 17 15 12 16 6" stroke="#34D399" stroke-width="2.5" stroke-linecap="round"/><path d="M19 24C19 17 20 12 21 7" stroke="#A78BFA" stroke-width="2.2" stroke-linecap="round"/><path d="M24 24C25 17 27 11 28 5" stroke="#34D399" stroke-width="2" stroke-linecap="round"/><path d="M4 18C6 16 8 20 10 18C12 16 14 20 16 18C18 16 20 20 22 18C24 16 26 20 28 18" stroke="#86EFAC" stroke-width="1.2" fill="none" opacity="0.7"/></svg>`
+  },
+
+  // ── Galaxies & Structure (9 new) ───────────────────────────────────────────
+  {
+    id: 'hoags-object',
+    name: "Hoag's Object Ring Galaxy",
+    category: 'deep-sky',
+    path: '/svgs/deep-sky/hoags-object.svg',
+    tags: ["hoag's object", 'ring galaxy', 'peculiar galaxy', 'detached ring', 'galactic structure'],
+    description: "One of the most perfect ring galaxies known — an outer ring of young blue stars completely detached from an inner core of old yellow stars, with a gap of nearly empty space between them. Discovered by Arthur Hoag in 1950, its origin remains debated.",
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="hoag-core" cx="16" cy="16" r="5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="60%" stop-color="#FDE047"/><stop offset="100%" stop-color="#B45309"/></radialGradient></defs><circle cx="16" cy="16" r="13.5" fill="none" stroke="#38BDF8" stroke-width="2"/><circle cx="16" cy="16" r="13.5" fill="none" stroke="#93C5FD" stroke-width="0.6" opacity="0.5"/><circle cx="16" cy="16" r="5" fill="url(#hoag-core)"/><circle cx="3" cy="16" r="1" fill="#38BDF8"/><circle cx="29" cy="16" r="1" fill="#38BDF8"/><circle cx="16" cy="3" r="1" fill="#60A5FA"/><circle cx="16" cy="29" r="1" fill="#60A5FA"/><circle cx="7" cy="6" r="0.8" fill="#93C5FD"/><circle cx="25" cy="7" r="0.8" fill="#93C5FD"/><circle cx="6" cy="25" r="0.8" fill="#93C5FD"/><circle cx="26" cy="25" r="0.8" fill="#93C5FD"/></svg>`
+  },
+  {
+    id: 'cigar-galaxy',
+    name: 'Cigar Galaxy M82 (Starburst)',
+    category: 'deep-sky',
+    path: '/svgs/deep-sky/cigar-galaxy.svg',
+    tags: ['M82', 'cigar galaxy', 'starburst galaxy', 'superwind', 'edge-on galaxy', 'galactic outflow'],
+    description: 'Seen edge-on, M82 is a furious starburst galaxy forming stars ten times faster than the Milky Way. The gravitational interaction with neighbor M81 compressed its gas, triggering a firestorm of star birth that now drives a superwind of hot plasma erupting perpendicular from the galactic disk.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><linearGradient id="m82-disk" x1="3" y1="16" x2="29" y2="16" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#451A03"/><stop offset="35%" stop-color="#D97706"/><stop offset="50%" stop-color="#FEF08A"/><stop offset="65%" stop-color="#D97706"/><stop offset="100%" stop-color="#451A03"/></linearGradient></defs><path d="M16 9L14 4L13 2" stroke="#EF4444" stroke-width="1.5" stroke-linecap="round"/><path d="M16 9L18 4L19 2" stroke="#F97316" stroke-width="1.2" stroke-linecap="round"/><path d="M16 9L12 5M16 9L20 5" stroke="#FDE047" stroke-width="0.8" stroke-linecap="round" opacity="0.7"/><ellipse cx="16" cy="16" rx="13" ry="3.5" fill="url(#m82-disk)" stroke="#FEF08A" stroke-width="0.5"/><path d="M16 23L14 28L13 30" stroke="#EF4444" stroke-width="1.5" stroke-linecap="round"/><path d="M16 23L18 28L19 30" stroke="#F97316" stroke-width="1.2" stroke-linecap="round"/><path d="M16 23L12 27M16 23L20 27" stroke="#FDE047" stroke-width="0.8" stroke-linecap="round" opacity="0.7"/></svg>`
+  },
+  {
+    id: 'cartwheel-galaxy',
+    name: 'Cartwheel Ring Galaxy',
+    category: 'deep-sky',
+    path: '/svgs/deep-sky/cartwheel-galaxy.svg',
+    tags: ['cartwheel galaxy', 'ring galaxy', 'spokes', 'collision', 'starburst ring'],
+    description: 'Created when a small intruder galaxy punched through the Cartwheel like a bullet through water, sending a ring-shaped shockwave expanding outward at 200,000 mph — igniting a starburst ring with radial spokes of compressed gas connecting it to the disrupted core.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="16" cy="16" r="13" fill="none" stroke="#F59E0B" stroke-width="1.8"/><circle cx="16" cy="16" r="4.5" fill="#FEF08A" stroke="#D97706" stroke-width="0.8"/><line x1="16" y1="11.5" x2="16" y2="3" stroke="#D97706" stroke-width="0.9"/><line x1="16" y1="20.5" x2="16" y2="29" stroke="#D97706" stroke-width="0.9"/><line x1="11.5" y1="16" x2="3" y2="16" stroke="#D97706" stroke-width="0.9"/><line x1="20.5" y1="16" x2="29" y2="16" stroke="#D97706" stroke-width="0.9"/><line x1="13.3" y1="13.3" x2="7.2" y2="7.2" stroke="#B45309" stroke-width="0.8"/><line x1="18.7" y1="18.7" x2="24.8" y2="24.8" stroke="#B45309" stroke-width="0.8"/><line x1="18.7" y1="13.3" x2="24.8" y2="7.2" stroke="#B45309" stroke-width="0.8"/><line x1="13.3" y1="18.7" x2="7.2" y2="24.8" stroke="#B45309" stroke-width="0.8"/><circle cx="16" cy="3" r="1.2" fill="#FDE047"/><circle cx="29" cy="16" r="1.2" fill="#FDE047"/><circle cx="16" cy="29" r="1.2" fill="#FDE047"/><circle cx="3" cy="16" r="1.2" fill="#FDE047"/></svg>`
+  },
+  {
+    id: 'tadpole-galaxy',
+    name: 'Tadpole Galaxy UGC 10214',
+    category: 'deep-sky',
+    path: '/svgs/deep-sky/tadpole-galaxy.svg',
+    tags: ['tadpole galaxy', 'UGC 10214', 'tidal tail', 'disrupted galaxy', 'galaxy collision'],
+    description: 'A compact barred spiral galaxy with a 280,000-light-year tidal tail — the longest known — torn out by a smaller intruder galaxy that punched through it. Dozens of young blue star clusters trace the tail like footprints of the cosmic collision.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="tadpole-core" cx="10" cy="12" r="7" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="50%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#0369A1"/></radialGradient></defs><path d="M14 16C18 20 24 24 30 28" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/><path d="M14 16C19 19 25 22 30 26" stroke="#7DD3FC" stroke-width="0.8" stroke-linecap="round" opacity="0.5"/><circle cx="22" cy="22" r="1" fill="#93C5FD"/><circle cx="27" cy="26" r="0.8" fill="#93C5FD"/><ellipse cx="10" cy="12" rx="8" ry="6" fill="url(#tadpole-core)" stroke="#38BDF8" stroke-width="0.8"/><path d="M5 9C7 7 12 8 14 11" stroke="#FFFFFF" stroke-width="0.8" stroke-linecap="round" opacity="0.5" fill="none"/></svg>`
+  },
+  {
+    id: 'antennae-galaxies',
+    name: 'Antennae Galaxies (NGC 4038/39)',
+    category: 'deep-sky',
+    path: '/svgs/deep-sky/antennae-galaxies.svg',
+    tags: ['antennae galaxies', 'NGC 4038', 'NGC 4039', 'galaxy collision', 'tidal tails', 'merger'],
+    description: `Two spiral galaxies in the throes of a billion-year collision. Their tidal interaction has flung two massive stellar tails into space — resembling an insect's antennae — while their colliding gas clouds birth millions of new star clusters in the overlapping region.`,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><path d="M10 12C4 6 2 2 4 2" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" fill="none"/><path d="M20 20C26 26 28 30 26 30" stroke="#F97316" stroke-width="1.5" stroke-linecap="round" fill="none"/><ellipse cx="10" cy="14" rx="5.5" ry="4" fill="#FDE047" stroke="#F59E0B" stroke-width="0.8" transform="rotate(-20 10 14)"/><circle cx="10" cy="14" r="2" fill="#FFFFFF"/><ellipse cx="20" cy="18" rx="5" ry="3.5" fill="#FB923C" stroke="#F97316" stroke-width="0.8" transform="rotate(20 20 18)"/><circle cx="20" cy="18" r="1.8" fill="#FFFFFF"/><path d="M14 15C15 14 16 15 17 17" stroke="#FEF08A" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>`
+  },
+  {
+    id: 'lenticular-galaxy',
+    name: 'Lenticular Galaxy (Edge-On)',
+    category: 'deep-sky',
+    path: '/svgs/deep-sky/lenticular-galaxy.svg',
+    tags: ['lenticular galaxy', 'S0 galaxy', 'edge-on', 'galactic disk', 'no spiral arms'],
+    description: 'A galaxy caught between spiral and elliptical — it has a disk like a spiral but ran out of the cold gas needed to form spiral arms. Seen edge-on, its lens-shaped profile reveals a bright bulge and flat disk with a dark dust lane cutting through the center.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="lent-core" cx="16" cy="16" r="4" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="50%" stop-color="#FDE047"/><stop offset="100%" stop-color="#D97706"/></radialGradient></defs><ellipse cx="16" cy="16" rx="14" ry="7" fill="#451A03" stroke="#D97706" stroke-width="1"/><ellipse cx="16" cy="16" rx="14" ry="2.5" fill="#0F172A" stroke="#1E293B" stroke-width="0.5"/><circle cx="16" cy="16" r="5" fill="url(#lent-core)"/></svg>`
+  },
+  {
+    id: 'globular-cluster',
+    name: 'Globular Star Cluster (M13)',
+    category: 'deep-sky',
+    path: '/svgs/deep-sky/globular-cluster.svg',
+    tags: ['globular cluster', 'M13', 'Hercules cluster', 'old stars', 'halo', 'dense cluster'],
+    description: 'M13 — the Great Hercules Cluster — is a gravitationally bound sphere of 300,000 ancient red and yellow stars, born 11.65 billion years ago, orbiting the Milky Way like a satellite city. In 1974, the Arecibo Message was beamed toward it.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="gc-glow" cx="16" cy="16" r="13" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FEF08A"/><stop offset="40%" stop-color="#F59E0B" stop-opacity="0.6"/><stop offset="100%" stop-color="#0F172A" stop-opacity="0"/></radialGradient></defs><circle cx="16" cy="16" r="13" fill="url(#gc-glow)"/><g fill="#FFFFFF"><circle cx="16" cy="16" r="1.5"/><circle cx="14" cy="14" r="1.2"/><circle cx="18" cy="14" r="1.2"/><circle cx="13" cy="17" r="1.2"/><circle cx="19" cy="17" r="1.2"/><circle cx="15" cy="20" r="1"/><circle cx="17" cy="19" r="1"/><circle cx="11" cy="13" r="0.9"/><circle cx="21" cy="13" r="0.9"/><circle cx="10" cy="17" r="0.9"/><circle cx="22" cy="17" r="0.9"/><circle cx="13" cy="21" r="0.8"/><circle cx="19" cy="21" r="0.8"/><circle cx="8" cy="11" r="0.7"/><circle cx="24" cy="11" r="0.7"/><circle cx="7" cy="16" r="0.7"/><circle cx="25" cy="16" r="0.7"/><circle cx="8" cy="21" r="0.7"/><circle cx="24" cy="21" r="0.7"/><circle cx="12" cy="9" r="0.7"/><circle cx="20" cy="9" r="0.7"/><circle cx="12" cy="23" r="0.7"/><circle cx="20" cy="23" r="0.7"/></g></svg>`
+  },
+  {
+    id: 'open-cluster',
+    name: 'Open Star Cluster (Pleiades)',
+    category: 'deep-sky',
+    path: '/svgs/deep-sky/open-cluster.svg',
+    tags: ['open cluster', 'Pleiades', 'seven sisters', 'young stars', 'OB association', 'star cluster'],
+    description: 'The Pleiades — Seven Sisters — are a loose family of hundreds of hot blue stars born from the same molecular cloud 100 million years ago. Visible to the naked eye for millennia, they appear in ancient texts from the Odyssey to Aboriginal Dreamtime stories.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="oc-nebula" cx="15" cy="14" r="10" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#38BDF8" stop-opacity="0.3"/><stop offset="100%" stop-color="#0F172A" stop-opacity="0"/></radialGradient></defs><circle cx="15" cy="14" r="10" fill="url(#oc-nebula)"/><g fill="#FFFFFF"><circle cx="15" cy="8" r="2"/><circle cx="21" cy="10" r="1.8"/><circle cx="20" cy="16" r="1.8"/><circle cx="14" cy="18" r="1.5"/><circle cx="9" cy="14" r="1.5"/><circle cx="11" cy="10" r="1.2"/><circle cx="18" cy="22" r="1"/></g><g fill="#93C5FD" opacity="0.8"><circle cx="25" cy="8" r="0.9"/><circle cx="6" cy="7" r="0.9"/><circle cx="26" cy="20" r="0.9"/><circle cx="5" cy="22" r="0.9"/><circle cx="16" cy="27" r="0.9"/></g></svg>`
+  },
+  {
+    id: 'cosmic-void',
+    name: 'Cosmic Void (Boötes Supervoid)',
+    category: 'deep-sky',
+    path: '/svgs/deep-sky/cosmic-void.svg',
+    tags: ['cosmic void', 'Bootes void', 'supervoid', 'large scale structure', 'cosmic web', 'filaments'],
+    description: 'The Boötes Supervoid is a 330-million-light-year bubble of near-emptiness in the cosmic web — one of the largest known structures in the universe. Inside its boundaries, galaxy density drops to a tiny fraction of the cosmic average, yet it remains unexplained by standard cosmology.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="16" cy="16" r="11" fill="none" stroke="#334155" stroke-width="0.8" stroke-dasharray="2 2"/><g fill="#93C5FD" opacity="0.8"><circle cx="4" cy="5" r="1.2"/><circle cx="12" cy="2" r="1.2"/><circle cx="21" cy="3" r="1.2"/><circle cx="28" cy="8" r="1.2"/><circle cx="30" cy="17" r="1.2"/><circle cx="28" cy="25" r="1.2"/><circle cx="20" cy="30" r="1.2"/><circle cx="11" cy="30" r="1.2"/><circle cx="3" cy="24" r="1.2"/><circle cx="2" cy="15" r="1.2"/><circle cx="6" cy="10" r="1"/><circle cx="24" cy="7" r="1"/></g><line x1="4" y1="5" x2="12" y2="2" stroke="#475569" stroke-width="0.6"/><line x1="12" y1="2" x2="21" y2="3" stroke="#475569" stroke-width="0.6"/><line x1="21" y1="3" x2="28" y2="8" stroke="#475569" stroke-width="0.6"/><line x1="28" y1="8" x2="30" y2="17" stroke="#475569" stroke-width="0.6"/><line x1="30" y1="17" x2="28" y2="25" stroke="#475569" stroke-width="0.6"/><line x1="28" y1="25" x2="20" y2="30" stroke="#475569" stroke-width="0.6"/><line x1="20" y1="30" x2="11" y2="30" stroke="#475569" stroke-width="0.6"/><line x1="11" y1="30" x2="3" y2="24" stroke="#475569" stroke-width="0.6"/><line x1="3" y1="24" x2="2" y2="15" stroke="#475569" stroke-width="0.6"/><line x1="2" y1="15" x2="4" y2="5" stroke="#475569" stroke-width="0.6"/></svg>`
+  },
+
+  // ── Stars & Nebulae (13 new) ───────────────────────────────────────────────
+  {
+    id: 'pillars-of-creation',
+    name: 'Pillars of Creation (Eagle Nebula)',
+    category: 'stellar',
+    path: '/svgs/stellar/pillars-of-creation.svg',
+    tags: ['pillars of creation', 'Eagle Nebula', 'M16', 'evaporation', 'Hubble', 'stellar nursery'],
+    description: 'Perhaps the most famous Hubble image: towering columns of interstellar gas and dust in the Eagle Nebula sculpted by intense ultraviolet radiation from nearby massive stars. New stars are actively forming inside these pillars — even as radiation slowly evaporates them.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><linearGradient id="pillar-grad" x1="0" y1="32" x2="0" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#1C0A00"/><stop offset="50%" stop-color="#92400E"/><stop offset="85%" stop-color="#D97706"/><stop offset="100%" stop-color="#FDE047"/></linearGradient></defs><path d="M5 32C5 26 6 20 7 14C8 10 10 10 10 14V32Z" fill="url(#pillar-grad)"/><path d="M7 14C7 10 9 8 10 10C11 12 10 16 10 16" fill="#D97706"/><path d="M13 32C13 22 13 14 14 8C15 4 17 4 17 8C17 8 18 16 18 32Z" fill="url(#pillar-grad)"/><path d="M14 8C14 4 16 2 17 4C18 6 17 10 17 10" fill="#D97706"/><path d="M21 32C21 26 22 22 23 18C24 14 26 14 26 18V32Z" fill="url(#pillar-grad)"/><path d="M23 18C23 14 25 12 26 14C27 16 26 20 26 20" fill="#D97706"/><g fill="#FEF08A"><circle cx="9" cy="10" r="0.8"/><circle cx="16" cy="4" r="1"/><circle cx="25" cy="14" r="0.8"/><circle cx="4" cy="20" r="0.7"/></g></svg>`
+  },
+  {
+    id: 'horsehead-nebula',
+    name: 'Horsehead Nebula (Barnard 33)',
+    category: 'stellar',
+    path: '/svgs/stellar/horsehead-nebula.svg',
+    tags: ['horsehead nebula', 'Barnard 33', 'dark nebula', 'Orion', 'silhouette', 'IC 434'],
+    description: 'A cold, dark pillar of dust and gas in Orion that casts an unmistakable horse-head silhouette against the glowing pink hydrogen emission of IC 434. The nebula is slowly evaporating under radiation from the bright star Sigma Orionis.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><rect x="1" y="1" width="30" height="30" rx="3" fill="#831843"/><rect x="1" y="1" width="30" height="30" rx="3" fill="#9D174D" opacity="0.4"/><path d="M14 32V22C14 16 16 14 18 14C20 14 21 16 20 18C21 17 23 16 24 17C25 18 24 20 22 21C23 22 23 25 20 26V32Z" fill="#0F172A"/><path d="M14 20C12 20 11 22 12 24C13 25 14 24 14 22Z" fill="#0F172A"/><g fill="#FDE047" opacity="0.6"><circle cx="25" cy="4" r="1.2"/><circle cx="6" cy="5" r="0.9"/><circle cx="28" cy="16" r="0.8"/></g></svg>`
+  },
+  {
+    id: 'butterfly-nebula',
+    name: 'Butterfly Nebula (NGC 6302)',
+    category: 'stellar',
+    path: '/svgs/stellar/butterfly-nebula.svg',
+    tags: ['butterfly nebula', 'NGC 6302', 'bipolar nebula', 'planetary nebula', 'Bug Nebula'],
+    description: `One of the most complex planetary nebulae known — a dying star's final exhalation formed two enormous gas wings expanding at 600,000 mph. The star at its waist is one of the hottest known at 250,000°C, yet hidden behind a dense equatorial torus of dust.`,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="wing-grad-l" cx="8" cy="16" r="10" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FDE047" stop-opacity="0.9"/><stop offset="50%" stop-color="#F97316" stop-opacity="0.7"/><stop offset="100%" stop-color="#7C2D12" stop-opacity="0"/></radialGradient><radialGradient id="wing-grad-r" cx="24" cy="16" r="10" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FDE047" stop-opacity="0.9"/><stop offset="50%" stop-color="#F97316" stop-opacity="0.7"/><stop offset="100%" stop-color="#7C2D12" stop-opacity="0"/></radialGradient></defs><path d="M16 14C12 10 2 8 2 16C2 24 12 22 16 18" fill="url(#wing-grad-l)" stroke="#F97316" stroke-width="1"/><path d="M16 14C20 10 30 8 30 16C30 24 20 22 16 18" fill="url(#wing-grad-r)" stroke="#F97316" stroke-width="1"/><ellipse cx="16" cy="16" rx="2.5" ry="4.5" fill="#1E293B" stroke="#475569" stroke-width="0.8"/><circle cx="16" cy="16" r="1.5" fill="#FFFFFF"/></svg>`
+  },
+  {
+    id: 'protoplanetary-disk',
+    name: 'Protoplanetary Disk (ALMA)',
+    category: 'stellar',
+    path: '/svgs/stellar/protoplanetary-disk.svg',
+    tags: ['protoplanetary disk', 'ALMA', 'HL Tau', 'planet formation', 'accretion disk', 'gap rings'],
+    description: 'The ALMA radio telescope revealed that even very young stars like HL Tauri already have planets carving concentric gap rings in their dusty disks — rewriting planet formation timelines. These rings are the birthplaces of worlds like our own.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="ppd-grad" cx="16" cy="16" r="13" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FEF08A"/><stop offset="20%" stop-color="#F59E0B"/><stop offset="40%" stop-color="#B45309" stop-opacity="0"/><stop offset="50%" stop-color="#D97706" stop-opacity="0.8"/><stop offset="65%" stop-color="#78350F" stop-opacity="0"/><stop offset="75%" stop-color="#92400E" stop-opacity="0.6"/><stop offset="90%" stop-color="#451A03" stop-opacity="0"/><stop offset="100%" stop-color="#78350F" stop-opacity="0.4"/></radialGradient></defs><circle cx="16" cy="16" r="13" fill="url(#ppd-grad)"/><circle cx="16" cy="16" r="10" fill="none" stroke="#0F172A" stroke-width="1.8" opacity="0.6"/><circle cx="16" cy="16" r="7" fill="none" stroke="#0F172A" stroke-width="1.5" opacity="0.6"/><circle cx="16" cy="16" r="3.5" fill="#FEF08A"/><circle cx="16" cy="16" r="1.5" fill="#FFFFFF"/></svg>`
+  },
+  {
+    id: 'supernova-remnant',
+    name: 'Supernova Remnant Shell (Cas A)',
+    category: 'stellar',
+    path: '/svgs/stellar/supernova-remnant.svg',
+    tags: ['supernova remnant', 'Cassiopeia A', 'Cas A', 'neutron star', 'shockwave', 'expanding shell'],
+    description: 'Cassiopeia A — the brightest radio source in the sky beyond our solar system — is the 340-year-old remnant of a massive stellar explosion. Its asymmetric expanding shell of shocked gas reaches temperatures of 10 million degrees and glows in X-rays, revealing a young neutron star at its heart.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><path d="M16 3C20 3 25 6 27 11C29 15 28 21 25 25C22 29 17 31 13 30C9 29 5 26 3 22C1 17 2 11 5 7C8 3 12 3 16 3Z" fill="none" stroke="#EF4444" stroke-width="1.5"/><path d="M16 6C19 6 23 8 25 12C27 15 26 20 23 23C20 26 16 28 12 27C9 26 6 23 5 19C4 15 5 10 8 8C11 6 13 6 16 6Z" fill="none" stroke="#F97316" stroke-width="1"/><path d="M8 6C6 5 4 4 3 3M24 5C26 4 28 3 29 2M28 25C29 27 30 29 31 30M4 26C3 28 2 30 1 31" stroke="#FDE047" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/><circle cx="16" cy="16" r="2.5" fill="#38BDF8"/></svg>`
+  },
+  {
+    id: 'reflection-nebula',
+    name: 'Reflection Nebula (Pleiades Nebulosity)',
+    category: 'stellar',
+    path: '/svgs/stellar/reflection-nebula.svg',
+    tags: ['reflection nebula', 'Pleiades', 'Merope', 'dust', 'blue nebula', 'starlight'],
+    description: 'Unlike emission nebulae that glow with their own light, reflection nebulae shine with borrowed glory — interstellar dust scatters the blue light of nearby hot stars. The Pleiades are surrounded by one, giving the cluster its soft, veiled glow in long-exposure photographs.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="refl-neb" cx="20" cy="10" r="14" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#38BDF8" stop-opacity="0.9"/><stop offset="40%" stop-color="#0284C7" stop-opacity="0.5"/><stop offset="80%" stop-color="#1E3A8A" stop-opacity="0.2"/><stop offset="100%" stop-color="#0F172A" stop-opacity="0"/></defs><path d="M6 28C8 20 14 12 26 6" fill="url(#refl-neb)" stroke="none"/><path d="M6 28C8 20 14 12 26 6C30 4 30 6 28 10C20 16 14 20 10 28Z" fill="#0D4F8B" opacity="0.5"/><circle cx="22" cy="8" r="2.5" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="0.8"/><g fill="#7DD3FC" opacity="0.7"><circle cx="8" cy="18" r="0.8"/><circle cx="12" cy="14" r="0.8"/><circle cx="16" cy="12" r="0.8"/></g></svg>`
+  },
+  {
+    id: 'bok-globule',
+    name: 'Bok Globule (Dark Nebula)',
+    category: 'stellar',
+    path: '/svgs/stellar/bok-globule.svg',
+    tags: ['Bok globule', 'dark nebula', 'Barnard', 'star formation', 'molecular cloud', 'protostar'],
+    description: 'Named after Bart Bok who predicted them in 1947, these small, cold clouds of molecular gas and dust are stellar eggs — dense enough to collapse under gravity. Inside their dark hearts, protostars are silently assembling out of the void, invisible until they ignite.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><g fill="#FFFFFF" opacity="0.5"><circle cx="3" cy="3" r="0.7"/><circle cx="8" cy="2" r="0.7"/><circle cx="25" cy="3" r="0.7"/><circle cx="29" cy="6" r="0.7"/><circle cx="30" cy="14" r="0.7"/><circle cx="29" cy="25" r="0.7"/><circle cx="24" cy="29" r="0.7"/><circle cx="5" cy="28" r="0.7"/><circle cx="2" cy="22" r="0.7"/><circle cx="2" cy="12" r="0.7"/><circle cx="15" cy="1" r="0.7"/><circle cx="16" cy="31" r="0.7"/></g><path d="M11 10C12 7 16 7 19 8C23 9 25 12 24 16C23 20 20 23 16 23C12 23 9 21 8 18C7 15 9 11 11 10Z" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/><circle cx="16" cy="16" r="1.5" fill="#F97316" opacity="0.6"/></svg>`
+  },
+  {
+    id: 'herbig-haro-object',
+    name: 'Herbig-Haro Object (HH 34)',
+    category: 'stellar',
+    path: '/svgs/stellar/herbig-haro-object.svg',
+    tags: ['Herbig-Haro', 'HH 34', 'protostellar jet', 'bow shock', 'young stellar object', 'bipolar jet'],
+    description: 'A newborn star, still wrapped in its birth cocoon, firing supersonic jets of ionized gas from its poles at 100–1,000 km/s. Where these jets slam into surrounding gas they create bright bow shocks — glowing knots of excited hydrogen visible as Herbig-Haro objects.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><path d="M16 2C14 6 13 9 14 11" stroke="#38BDF8" stroke-width="1.8" stroke-linecap="round"/><path d="M16 2C18 6 19 9 18 11" stroke="#38BDF8" stroke-width="1.8" stroke-linecap="round"/><path d="M10 3C14 6 14 11 16 13" stroke="#7DD3FC" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><path d="M22 3C18 6 18 11 16 13" stroke="#7DD3FC" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><path d="M12 2C16 5 16 5 16 5" stroke="#A5F3FC" stroke-width="0.6" opacity="0.5" stroke-linecap="round"/><circle cx="16" cy="16" r="3.5" fill="#FEF08A" stroke="#F59E0B" stroke-width="1"/><path d="M16 30C14 26 13 23 14 21" stroke="#F97316" stroke-width="1.8" stroke-linecap="round"/><path d="M16 30C18 26 19 23 18 21" stroke="#F97316" stroke-width="1.8" stroke-linecap="round"/><path d="M12 29C15 26 16 21 16 19" stroke="#FDBA74" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><path d="M20 29C17 26 16 21 16 19" stroke="#FDBA74" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/></svg>`
+  },
+  {
+    id: 'wolf-rayet-bubble',
+    name: 'Wolf-Rayet Wind Bubble',
+    category: 'stellar',
+    path: '/svgs/stellar/wolf-rayet-bubble.svg',
+    tags: ['Wolf-Rayet', 'stellar wind', 'wind bubble', 'NGC 6888', 'Crescent Nebula', 'hot star'],
+    description: 'Wolf-Rayet stars — among the most massive and luminous known — blast out their outer layers in furious stellar winds at 2,000 km/s, inflating enormous glowing bubbles of swept-up gas. The Crescent Nebula (NGC 6888) is a textbook example, sculpted over 400,000 years.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="16" cy="16" r="13" fill="none" stroke="#34D399" stroke-width="1.8"/><path d="M5 10C8 8 12 9 14 12M5 10C7 12 8 15 7 18" stroke="#6EE7B7" stroke-width="0.8" fill="none" opacity="0.7"/><path d="M27 10C24 8 20 9 18 12M27 10C25 12 24 15 25 18" stroke="#6EE7B7" stroke-width="0.8" fill="none" opacity="0.7"/><circle cx="16" cy="16" r="4" fill="#FFFFFF" stroke="#A7F3D0" stroke-width="1.2"/><circle cx="16" cy="16" r="2" fill="#F0FFF4"/></svg>`
+  },
+  {
+    id: 'nova-ring',
+    name: 'Classical Nova Expanding Shell',
+    category: 'stellar',
+    path: '/svgs/stellar/nova-ring.svg',
+    tags: ['nova', 'classical nova', 'white dwarf', 'shell', 'thermonuclear', 'expanding ring'],
+    description: 'A white dwarf steals hydrogen from a companion star until the surface pressure ignites a thermonuclear runaway — a nova. The explosion ejects a shell of gas at thousands of km/s, which expands as a visible glowing ring for decades before fading. Unlike a supernova, the white dwarf survives to repeat.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="16" cy="16" r="12" fill="none" stroke="#FDE047" stroke-width="1.5"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="#F59E0B" stroke-width="0.8" stroke-dasharray="2 1.5"/><circle cx="16" cy="16" r="5" fill="none" stroke="#FDBA74" stroke-width="0.6" stroke-dasharray="1 2"/><circle cx="16" cy="16" r="2.5" fill="#FFFFFF" stroke="#FEF08A" stroke-width="1"/><circle cx="21" cy="12" r="1.5" fill="#94A3B8"/><line x1="19" y1="13" x2="21" y2="12" stroke="#64748B" stroke-width="0.8"/></svg>`
+  },
+  {
+    id: 'variable-star-pulsation',
+    name: 'Variable Star Pulsation',
+    category: 'stellar',
+    path: '/svgs/stellar/variable-star-pulsation.svg',
+    tags: ['variable star', 'Cepheid', 'RR Lyrae', 'pulsation', 'period', 'standard candle'],
+    description: 'Cepheid variable stars rhythmically swell and shrink — their size, temperature, and brightness oscillating with precise clockwork. Henrietta Swan Leavitt discovered that their pulsation period directly reveals their true luminosity, making them the "standard candles" that first let us measure the scale of the universe.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="16" cy="16" r="13" fill="none" stroke="#FDE047" stroke-width="0.6" stroke-dasharray="1.5 2"/><circle cx="16" cy="16" r="9.5" fill="none" stroke="#F59E0B" stroke-width="0.8" stroke-dasharray="2 1.5"/><circle cx="16" cy="16" r="6" fill="none" stroke="#FDBA74" stroke-width="1" stroke-dasharray="2 1"/><circle cx="16" cy="16" r="3.5" fill="#FFFFFF" stroke="#FEF08A" stroke-width="1.2"/><path d="M3 16L6 8L9 24L12 10L14 20L16 14L18 20L20 10L23 24L26 8L29 16" stroke="#EF4444" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/></svg>`
+  },
+  {
+    id: 'stellar-bow-shock',
+    name: 'Stellar Bow Shock',
+    category: 'stellar',
+    path: '/svgs/stellar/stellar-bow-shock.svg',
+    tags: ['bow shock', 'runaway star', 'stellar wind', 'interstellar medium', 'Zeta Ophiuchi'],
+    description: `When a massive star moves through the interstellar medium at supersonic speed — ejected from its birth cluster by a binary companion's supernova — its stellar wind rams into surrounding gas, creating a brilliant parabolic bow shock. Zeta Ophiuchi, a runaway O-star, has one of the most spectacular known.`,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="22" cy="16" r="4" fill="#38BDF8" stroke="#E0F2FE" stroke-width="1.2"/><path d="M8 4C4 8 3 12 3 16C3 20 4 24 8 28" stroke="#00F0FF" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M11 6C7 10 6 13 6 16C6 19 7 22 11 26" stroke="#38BDF8" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.7"/><path d="M14 8C11 12 10 14 10 16C10 18 11 20 14 24" stroke="#7DD3FC" stroke-width="0.8" stroke-linecap="round" fill="none" opacity="0.5"/><line x1="22" y1="16" x2="6" y2="16" stroke="#FFFFFF" stroke-width="0.6" stroke-dasharray="2 2" opacity="0.4"/></svg>`
+  },
+
+  // ── Phenomena & Events (7 new) ─────────────────────────────────────────────
+  {
+    id: 'gravitational-lensing-arc',
+    name: 'Gravitational Lensing Arc',
+    category: 'mysteries',
+    path: '/svgs/mysteries/gravitational-lensing-arc.svg',
+    tags: ['gravitational lensing', 'Einstein ring', 'arc', 'dark matter', 'galaxy cluster', 'general relativity'],
+    description: 'Einstein predicted that massive objects warp spacetime, bending light that passes nearby. A foreground galaxy cluster can lens a background galaxy into a stretched arc — sometimes a complete Einstein ring — allowing astronomers to map invisible dark matter and glimpse galaxies too distant to see otherwise.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><ellipse cx="16" cy="16" rx="6" ry="5" fill="#FEF08A" stroke="#D97706" stroke-width="1.2"/><circle cx="16" cy="16" r="2" fill="#FFFFFF"/><path d="M3 10C5 4 14 2 18 6" stroke="#818CF8" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M29 10C27 4 18 2 14 6" stroke="#818CF8" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M4 22C6 28 15 30 19 26" stroke="#A5B4FC" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.8"/><path d="M28 22C26 28 17 30 13 26" stroke="#A5B4FC" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.8"/></svg>`
+  },
+  {
+    id: 'roche-limit-breakup',
+    name: 'Roche Limit Tidal Disruption',
+    category: 'mysteries',
+    path: '/svgs/mysteries/roche-limit-breakup.svg',
+    tags: ['Roche limit', 'tidal disruption', 'Saturn rings', 'comet breakup', 'tidal force', 'Shoemaker-Levy'],
+    description: `When a moon or comet crosses the Roche limit — the critical distance where tidal forces exceed its own self-gravity — it tears apart. Saturn's rings are the frozen remnant of a moon (or captured body) that ventured too close. Comet Shoemaker-Levy 9 spectacularly broke into 21 fragments before plunging into Jupiter.`,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="7" cy="16" r="6" fill="#1E40AF" stroke="#60A5FA" stroke-width="1"/><circle cx="19" cy="13" r="3.5" fill="#94A3B8" opacity="0.9"/><circle cx="23" cy="16" r="2.5" fill="#94A3B8" opacity="0.7"/><circle cx="26" cy="19" r="1.8" fill="#94A3B8" opacity="0.5"/><circle cx="28" cy="23" r="1.2" fill="#64748B" opacity="0.5"/><circle cx="29" cy="27" r="0.8" fill="#64748B" opacity="0.4"/><line x1="13" y1="16" x2="27" y2="22" stroke="#475569" stroke-width="0.6" stroke-dasharray="1 1" opacity="0.6"/></svg>`
+  },
+  {
+    id: 'kilonova-flash',
+    name: 'Kilonova Neutron Star Merger',
+    category: 'mysteries',
+    path: '/svgs/mysteries/kilonova-flash.svg',
+    tags: ['kilonova', 'neutron star merger', 'GW170817', 'r-process', 'gold', 'gravitational waves', 'heavy elements'],
+    description: `When two neutron stars spiral together and collide, they produce a kilonova — a flash that forges most of the universe's heavy elements including all the gold, platinum, and uranium through rapid neutron capture (r-process). GW170817 in 2017 was detected in both gravitational waves and light simultaneously.`,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="kn-glow" cx="16" cy="16" r="10" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="30%" stop-color="#FDE047"/><stop offset="65%" stop-color="#F97316"/><stop offset="100%" stop-color="#0F172A" stop-opacity="0"/></radialGradient></defs><circle cx="16" cy="16" r="10" fill="url(#kn-glow)"/><path d="M16 16L22 10" stroke="#E0F2FE" stroke-width="1.5" stroke-dasharray="2 1" stroke-linecap="round"/><path d="M16 16L10 22" stroke="#E0F2FE" stroke-width="1.5" stroke-dasharray="2 1" stroke-linecap="round"/><circle cx="23" cy="9" r="2.5" fill="#E2E8F0" stroke="#94A3B8" stroke-width="0.8"/><circle cx="9" cy="23" r="2.5" fill="#94A3B8" stroke="#64748B" stroke-width="0.8"/><path d="M2 26C4 20 6 16 8 14M22 2C22 8 20 12 18 14" stroke="#FDE047" stroke-width="0.8" stroke-linecap="round" opacity="0.7"/></svg>`
+  },
+  {
+    id: 'gamma-ray-burst',
+    name: 'Gamma-Ray Burst Jet',
+    category: 'mysteries',
+    path: '/svgs/mysteries/gamma-ray-burst.svg',
+    tags: ['gamma-ray burst', 'GRB', 'collapsar', 'relativistic jet', 'afterglow', 'most energetic explosion'],
+    description: 'The most energetic explosions in the universe since the Big Bang — releasing more energy in seconds than the Sun will emit in its entire lifetime. Long GRBs mark the death of massive stars collapsing into black holes, firing twin relativistic jets that briefly outshine the entire observable universe.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="16" cy="16" r="3.5" fill="#FFFFFF" stroke="#EF4444" stroke-width="1"/><polygon points="16,12 13,2 19,2" fill="#EF4444"/><polygon points="16,12 10,4 14,4" fill="#F97316" opacity="0.7"/><polygon points="16,12 22,4 18,4" fill="#F97316" opacity="0.7"/><polygon points="16,20 13,30 19,30" fill="#EF4444"/><polygon points="16,20 10,28 14,28" fill="#F97316" opacity="0.7"/><polygon points="16,20 22,28 18,28" fill="#F97316" opacity="0.7"/><circle cx="16" cy="2" r="1.5" fill="#FEF08A"/><circle cx="16" cy="30" r="1.5" fill="#FEF08A"/></svg>`
+  },
+  {
+    id: 'fast-radio-burst',
+    name: 'Fast Radio Burst (FRB)',
+    category: 'mysteries',
+    path: '/svgs/mysteries/fast-radio-burst.svg',
+    tags: ['fast radio burst', 'FRB', 'magnetar', 'millisecond pulse', 'extragalactic', 'transient'],
+    description: 'Millisecond flashes of radio energy more powerful than 500 million suns — their origins unknown until 2020 when a magnetar in our own galaxy was caught producing one. Most FRBs come from billions of light-years away, their signals delayed and dispersed by the intergalactic medium.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="16" cy="16" r="2" fill="#FFFFFF"/><circle cx="16" cy="16" r="5.5" fill="none" stroke="#00F0FF" stroke-width="1.5"/><circle cx="16" cy="16" r="9" fill="none" stroke="#38BDF8" stroke-width="1.2" opacity="0.7"/><circle cx="16" cy="16" r="12.5" fill="none" stroke="#7DD3FC" stroke-width="0.8" opacity="0.5"/><circle cx="16" cy="16" r="15" fill="none" stroke="#BAE6FD" stroke-width="0.5" opacity="0.3"/><path d="M4 8L6 16L8 8L10 16L12 8" stroke="#00F0FF" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/></svg>`
+  },
+  {
+    id: 'tidal-disruption-event',
+    name: 'Tidal Disruption Event (TDE)',
+    category: 'mysteries',
+    path: '/svgs/mysteries/tidal-disruption-event.svg',
+    tags: ['tidal disruption event', 'TDE', 'black hole', 'stellar disruption', 'accretion', 'flare'],
+    description: 'When a star wanders too close to a supermassive black hole, tidal forces overcome its self-gravity and shred it into a stream of gas. Half the material falls into the black hole in a luminous accretion flare visible across billions of light-years — the brief moment a normally dark galactic center lights up.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="8" cy="16" r="6" fill="#030712" stroke="#6B21A8" stroke-width="1.5"/><circle cx="8" cy="16" r="3" fill="none" stroke="#A855F7" stroke-width="0.8"/><circle cx="26" cy="6" r="4" fill="#FDE047" stroke="#F59E0B" stroke-width="0.8"/><path d="M24 9C20 12 14 15 10 16C16 16 20 18 22 22" stroke="#F97316" stroke-width="1.8" stroke-linecap="round" fill="none"/><path d="M25 8C22 11 17 13 12 15" stroke="#FEF08A" stroke-width="0.8" stroke-linecap="round" fill="none" opacity="0.7"/></svg>`
+  },
+  {
+    id: 'cosmic-string-defect',
+    name: 'Cosmic String Spacetime Defect',
+    category: 'mysteries',
+    path: '/svgs/mysteries/cosmic-string-defect.svg',
+    tags: ['cosmic string', 'topological defect', 'spacetime', 'inflation', 'gravitational lensing'],
+    description: 'Predicted by inflationary cosmology — one-dimensional defects in the fabric of spacetime, thinner than a proton yet stretching across billions of light-years. Each kilometer of cosmic string contains more mass than the Moon. Their gravitational effect would produce distinctive double-image lensing of background galaxies.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><path d="M4 28C8 20 12 16 16 16C20 16 24 12 28 4" stroke="#A855F7" stroke-width="2.5" stroke-linecap="round"/><path d="M2 25C6 18 10 14 14 14" stroke="#C084FC" stroke-width="0.8" fill="none" opacity="0.7"/><path d="M18 18C22 14 26 8 30 2" stroke="#C084FC" stroke-width="0.8" fill="none" opacity="0.7"/><g fill="#818CF8" opacity="0.8"><circle cx="7" cy="8" r="1.5"/><circle cx="9" cy="6" r="1.5"/><circle cx="22" cy="24" r="1.5"/><circle cx="24" cy="26" r="1.5"/></g></svg>`
   }
+
 ];
