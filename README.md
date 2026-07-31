@@ -12,13 +12,13 @@
 
 ## 🌌 Overview
 
-**Cosmic Avatars** is a cohesive, open-source library of **84 pixel-perfect vector space SVG icons** and a **Deterministic User Avatar Generator**. Built for modern web applications, user dashboards, gaming platforms, and developer tools, it enables instant client-side generation of millions of unique, reproducible space avatars from any seed string (username, email, or user ID).
+**Cosmic Avatars** is a cohesive, open-source library of **97 pixel-perfect vector space SVG icons** and a **Deterministic User Avatar Generator**. Built for modern web applications, user dashboards, gaming platforms, and developer tools, it enables instant client-side generation of millions of unique, reproducible space avatars from any seed string (username, email, or user ID).
 
 ---
 
 ## ✨ Features
 
-- 🪐 **84 Hand-Crafted 32×32 Vector Icons**: Organized into 4 celestial categories:
+- 🪐 **97 Hand-Crafted 32×32 Vector Icons**: Organized into 4 celestial categories:
   - **Solar System & Stars** (Sun, Mercury, Venus, Earth & Moon, Mars, Jupiter, Saturn, Black Holes, White Dwarfs, Pulsars)
   - **Deep Sky & Galaxies** (Spiral Galaxy, Elliptical Galaxy, Sombrero Galaxy, Quasar Core, Emission Nebula, Wormhole)
   - **Spacecraft & Tech** (Space Shuttle, Voyager Probe, Solar Sail, ISS Station, Space Elevator, Mars Rover)

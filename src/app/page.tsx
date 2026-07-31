@@ -118,7 +118,7 @@ export default function Home() {
 
         <footer className="site-footer">
           <div className="footer-content">
-            <p>Crafted with precision • 84 Vector Space Icons • 32×32 viewBox</p>
+            <p>Crafted with precision • 97 Vector Space Icons • 32×32 viewBox</p>
             <div className="footer-meta">
               <span>Clean Geometric Paths</span> • <span>Gradient Defs</span> • <span>Pixel-Grid Aligned</span> • <span>Scalable 16px – 128px+</span>
             </div>

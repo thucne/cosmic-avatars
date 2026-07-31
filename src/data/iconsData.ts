@@ -785,5 +785,131 @@ export const SPACE_ICONS: SpaceIcon[] = [
     tags: ['great attractor', 'gravity anomaly', 'laniakea', 'norma cluster', 'hidden mass', 'cosmic flow'],
     description: `Hundreds of thousands of galaxies, including our own Milky Way, are being drawn toward an immense mass concentration 250 million light-years away. We cannot see it directly — it lies obscured by our own galaxy’s dust and stars.`,
     svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="attractor" cx="16" cy="16" r="12" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#F59E0B" stop-opacity="0.9"/><stop offset="30%" stop-color="#7C3AED" stop-opacity="0.4"/><stop offset="100%" stop-color="#0F172A" stop-opacity="0"/></radialGradient></defs><circle cx="16" cy="16" r="12" fill="url(#attractor)"/><circle cx="16" cy="16" r="3" fill="#FDE047" stroke="#F59E0B" stroke-width="1"/><path d="M4 4 Q10 10 14 14" stroke="#A78BFA" stroke-width="0.7" fill="none"/><path d="M28 4 Q22 10 18 14" stroke="#A78BFA" stroke-width="0.7" fill="none"/><path d="M4 28 Q10 22 14 18" stroke="#A78BFA" stroke-width="0.7" fill="none"/><path d="M28 28 Q22 22 18 18" stroke="#A78BFA" stroke-width="0.7" fill="none"/><path d="M16 3 Q16 9 16 13" stroke="#C4B5FD" stroke-width="0.7" fill="none"/><path d="M16 19 Q16 23 16 29" stroke="#C4B5FD" stroke-width="0.7" fill="none"/><path d="M3 16 Q9 16 13 16" stroke="#C4B5FD" stroke-width="0.7" fill="none"/><path d="M19 16 Q23 16 29 16" stroke="#C4B5FD" stroke-width="0.7" fill="none"/><circle cx="5" cy="5" r="1.2" fill="#818CF8"/><circle cx="27" cy="5" r="1.2" fill="#818CF8"/><circle cx="5" cy="27" r="1.2" fill="#818CF8"/><circle cx="27" cy="27" r="1.2" fill="#818CF8"/></svg>`
+  },
+  {
+    id: 'triangle-ufo',
+    name: 'Black Triangle UFO (TR-3B)',
+    category: 'mysteries',
+    path: '/svgs/mysteries/triangle-ufo.svg',
+    tags: ["tr-3b","triangle ufo","stealth","alien tech","orb lights","antigravity"],
+    description: `Unidentified black triangular craft featuring corner lights and a glowing central core have been reported across the globe since the late 20th century. Believed by many to be either secretive aerospace projects or exotic antigravity craft.`,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><polygon points="16,4 29,27 3,27" fill="#0F172A" stroke="#334155" stroke-width="1.2"/><polygon points="16,8 26,25 6,25" fill="#1E293B"/><circle cx="16" cy="18" r="3.5" fill="#00F0FF" stroke="#FFFFFF" stroke-width="0.8"/><circle cx="16" cy="7" r="1.5" fill="#FDE047"/><circle cx="6" cy="24" r="1.5" fill="#FDE047"/><circle cx="26" cy="24" r="1.5" fill="#FDE047"/></svg>`
+  },
+  {
+    id: 'alien-mothership',
+    name: 'Alien Mothership',
+    category: 'mysteries',
+    path: '/svgs/mysteries/alien-mothership.svg',
+    tags: ["alien","mothership","crystal core","bio ship","green","extra terrestrial"],
+    description: `The legendary flagship of alien fleets, depicted in sci-fi lore as enormous self-sustaining arks or bio-mechanical superstructures capable of carrying entire extraterrestrial civilizations across interstellar voids.`,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><linearGradient id="bio-ship" x1="16" y1="4" x2="16" y2="28" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#10B981"/><stop offset="50%" stop-color="#059669"/><stop offset="100%" stop-color="#064E3B"/></linearGradient></defs><polygon points="16,3 29,17 25,27 16,23 7,27 3,17" fill="url(#bio-ship)" stroke="#34D399" stroke-width="1"/><polygon points="16,10 20,16 16,21 12,16" fill="#F43F5E" stroke="#FDA4AF" stroke-width="0.8"/><polygon points="16,12 18,16 16,19 14,16" fill="#FFFFFF"/><line x1="16" y1="3" x2="16" y2="10" stroke="#A7F3D0" stroke-width="1"/><line x1="3" y1="17" x2="12" y2="16" stroke="#A7F3D0" stroke-width="0.8"/><line x1="29" y1="17" x2="20" y2="16" stroke="#A7F3D0" stroke-width="0.8"/><circle cx="7" cy="24" r="1.2" fill="#00F0FF"/><circle cx="25" cy="24" r="1.2" fill="#00F0FF"/></svg>`
+  },
+  {
+    id: 'crop-circle-pattern',
+    name: 'Sacred Geometry Crop Circle',
+    category: 'mysteries',
+    path: '/svgs/mysteries/crop-circle-pattern.svg',
+    tags: ["crop circle","sacred geometry","fractal","alien sign","amber","symbol"],
+    description: `Intricate, mathematically precise patterns flattened overnight into agricultural fields. While many are human artwork, the astounding geometric complexity and altered soil magnetism continue to intrigue mystery enthusiasts.`,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="16" cy="16" r="13" stroke="#F59E0B" stroke-width="1.2"/><circle cx="16" cy="16" r="8" stroke="#FDE047" stroke-width="1"/><circle cx="16" cy="16" r="4" fill="#F59E0B"/><circle cx="16" cy="3" r="1.8" fill="#F59E0B"/><circle cx="16" cy="29" r="1.8" fill="#F59E0B"/><circle cx="3" cy="16" r="1.8" fill="#F59E0B"/><circle cx="29" cy="16" r="1.8" fill="#F59E0B"/><polygon points="16,8 23,20 9,20" stroke="#FEF08A" stroke-width="0.8" fill="none"/><polygon points="16,24 23,12 9,12" stroke="#FEF08A" stroke-width="0.8" fill="none"/></svg>`
+  },
+  {
+    id: 'big-dipper',
+    name: 'Big Dipper (Ursa Major)',
+    category: 'mysteries',
+    path: '/svgs/mysteries/big-dipper.svg',
+    tags: ["big dipper","ursa major","constellation","stars","plow","sky map"],
+    description: `One of the most recognizable star patterns in the northern night sky. Part of the constellation Ursa Major (the Great Bear), its pointer stars Dubhe and Merak have guided navigators toward Polaris for millennia.`,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><polyline points="4,7 8,11 13,13 17,16 18,22 27,24 26,17 17,16" stroke="#38BDF8" stroke-width="0.9" stroke-dasharray="1.5 1.5" opacity="0.6"/><circle cx="4" cy="7" r="1.8" fill="#F0F9FF"/><circle cx="8" cy="11" r="1.5" fill="#F0F9FF"/><circle cx="13" cy="13" r="1.5" fill="#F0F9FF"/><circle cx="17" cy="16" r="1.8" fill="#FDE047"/><circle cx="18" cy="22" r="1.6" fill="#F0F9FF"/><circle cx="27" cy="24" r="2" fill="#FDE047"/><circle cx="26" cy="17" r="1.8" fill="#F0F9FF"/><circle cx="23" cy="7" r="0.6" fill="#94A3B8" opacity="0.5"/><circle cx="8" cy="25" r="0.6" fill="#94A3B8" opacity="0.5"/><circle cx="29" cy="12" r="0.7" fill="#94A3B8" opacity="0.5"/></svg>`
+  },
+  {
+    id: 'cassiopeia-constellation',
+    name: 'Cassiopeia (The W)',
+    category: 'mysteries',
+    path: '/svgs/mysteries/cassiopeia-constellation.svg',
+    tags: ["cassiopeia","w constellation","queen","sky map","stars"],
+    description: `A prominent W-shaped constellation of five bright stars in the northern sky, named after the vain queen of Greek mythology. Circumpolar in northern latitudes, it spins continuously around the North Star.`,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><polyline points="4,10 9,21 16,14 23,23 28,11" stroke="#FDE047" stroke-width="1" stroke-dasharray="2 1.5"/><circle cx="4" cy="10" r="1.8" fill="#FFFFFF"/><circle cx="9" cy="21" r="1.8" fill="#FDE047"/><circle cx="16" cy="14" r="2.2" fill="#38BDF8"/><circle cx="23" cy="23" r="1.8" fill="#FFFFFF"/><circle cx="28" cy="11" r="2" fill="#EC4899"/></svg>`
+  },
+  {
+    id: 'scorpius-constellation',
+    name: 'Scorpius & Antares',
+    category: 'mysteries',
+    path: '/svgs/scorpius-constellation.svg',
+    tags: ["scorpius","antares","scorpion","red supergiant","constellation"],
+    description: `A striking southern constellation dominated by the fiery red supergiant Antares — the 'Rival of Mars'. Scorpius curves through the bright central dust lanes of our Milky Way galaxy.`,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><path d="M6 7L12 12L15 17L14 23L17 27L22 28L25 25L24 21" stroke="#F472B6" stroke-width="0.8" stroke-dasharray="1.5 1.5"/><line x1="6" y1="7" x2="4" y2="4" stroke="#F472B6" stroke-width="0.8"/><line x1="6" y1="7" x2="8" y2="3" stroke="#F472B6" stroke-width="0.8"/><circle cx="12" cy="12" r="2.5" fill="#EF4444"/><circle cx="12" cy="12" r="1" fill="#FFFFFF"/><circle cx="6" cy="7" r="1.5" fill="#F0F9FF"/><circle cx="15" cy="17" r="1.5" fill="#F0F9FF"/><circle cx="17" cy="27" r="1.5" fill="#F0F9FF"/><circle cx="22" cy="28" r="1.5" fill="#F0F9FF"/><circle cx="25" cy="25" r="1.5" fill="#FDE047"/><circle cx="24" cy="21" r="1.8" fill="#38BDF8"/></svg>`
+  },
+  {
+    id: 'shooting-star-comet',
+    name: 'Halley Comet',
+    category: 'mysteries',
+    path: '/svgs/mysteries/shooting-star-comet.svg',
+    tags: ["comet","shooting star","halley","meteor","fireball","plasma tail"],
+    description: `Perhaps the most famous periodic comet in history, returning to Earth's skies every 75-76 years. Its icy nucleus sheds glowing ion and dust tails millions of kilometres long as it rounds the Sun.`,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><linearGradient id="comet-tail-ion" x1="26" y1="6" x2="4" y2="28" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#00F0FF"/><stop offset="40%" stop-color="#3B82F6"/><stop offset="100%" stop-color="#1E1B4B" stop-opacity="0"/></linearGradient><linearGradient id="comet-tail-dust" x1="26" y1="6" x2="8" y2="24" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FEF08A"/><stop offset="50%" stop-color="#F59E0B" stop-opacity="0.8"/><stop offset="100%" stop-color="#78350F" stop-opacity="0"/></linearGradient></defs><polygon points="26,6 22,9 3,21 16,14" fill="url(#comet-tail-dust)"/><polygon points="26,6 23,4 2,26 8,28" fill="url(#comet-tail-ion)"/><circle cx="25" cy="7" r="4.5" fill="#00F0FF" opacity="0.4"/><circle cx="25" cy="7" r="3" fill="#38BDF8"/><circle cx="25" cy="7" r="1.8" fill="#FFFFFF"/><path d="M25 2v10M20 7h10" stroke="#FFFFFF" stroke-width="0.8" opacity="0.8"/></svg>`
+  },
+  {
+    id: 'meteor-shower',
+    name: 'Perseid Meteor Shower',
+    category: 'mysteries',
+    path: '/svgs/mysteries/meteor-shower.svg',
+    tags: ["meteor shower","perseids","falling stars","fireballs","atmosphere"],
+    description: `An annual celestial light show created when Earth plows through debris left by Comet Swift-Tuttle. Dozens of swift fireballs streak across the summer night sky every August.`,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><line x1="28" y1="4" x2="16" y2="16" stroke="#00F0FF" stroke-width="1.8" stroke-linecap="round"/><circle cx="16" cy="16" r="1" fill="#FFFFFF"/><line x1="22" y1="12" x2="8" y2="26" stroke="#FDE047" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="26" r="1" fill="#FFFFFF"/><line x1="18" y1="2" x2="6" y2="14" stroke="#EC4899" stroke-width="1.2" stroke-linecap="round"/><circle cx="6" cy="14" r="0.8" fill="#FFFFFF"/><line x1="30" y1="16" x2="18" y2="28" stroke="#38BDF8" stroke-width="1.2" stroke-linecap="round"/><circle cx="18" cy="28" r="0.8" fill="#FFFFFF"/></svg>`
+  },
+  {
+    id: 'asteroid-belt',
+    name: 'Asteroid Belt Cluster',
+    category: 'mysteries',
+    path: '/svgs/mysteries/asteroid-belt.svg',
+    tags: ["asteroid","meteorite","space rock","kuiper","orbit","debris"],
+    description: `A vast ring of rocky and metallic planetesimals orbiting between Mars and Jupiter. Containing millions of asteroids, it represents primeval leftover building blocks from the birth of our solar system.`,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><linearGradient id="rock-grad" x1="4" y1="4" x2="28" y2="28" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#94A3B8"/><stop offset="60%" stop-color="#475569"/><stop offset="100%" stop-color="#1E293B"/></linearGradient></defs><ellipse cx="16" cy="16" rx="14" ry="7" stroke="#64748B" stroke-width="0.8" stroke-dasharray="2 2" fill="none" transform="rotate(-20 16 16)" opacity="0.4"/><polygon points="12,10 18,8 22,12 20,18 14,19 9,15" fill="url(#rock-grad)" stroke="#CBD5E1" stroke-width="0.8"/><circle cx="14" cy="12" r="1.2" fill="#334155"/><circle cx="18" cy="15" r="1" fill="#334155"/><polygon points="4,18 7,16 9,19 7,22 4,21" fill="url(#rock-grad)" stroke="#94A3B8" stroke-width="0.6"/><polygon points="24,19 27,17 29,20 27,22 25,21" fill="url(#rock-grad)" stroke="#94A3B8" stroke-width="0.6"/><circle cx="22" cy="7" r="1.2" fill="#CBD5E1"/><circle cx="8" cy="8" r="0.9" fill="#94A3B8"/><circle cx="15" cy="25" r="1" fill="#94A3B8"/></svg>`
+  },
+  {
+    id: 'alien-entity',
+    name: 'Cosmic Alien Avatar',
+    category: 'mysteries',
+    path: '/svgs/mysteries/alien-entity.svg',
+    tags: ["alien","extraterrestrial","et","grey alien","green","glowing eyes","avatar"],
+    description: `The iconic classic 'Grey' extraterrestrial archetype with large black almond eyes and a bulbous cranium, popularized by decades of close encounter reports, pop culture, and speculative lore.`,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="alien-skin" x1="16" y1="8" x2="16" y2="28" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#A7F3D0"/><stop offset="50%" stop-color="#10B981"/><stop offset="100%" stop-color="#064E3B"/></radialGradient><radialGradient id="alien-eye" x1="12" y1="14" x2="12" y2="20" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#38BDF8"/><stop offset="60%" stop-color="#0F172A"/><stop offset="100%" stop-color="#000000"/></radialGradient></defs><path d="M16 4C9 4 4 9 4 17C4 22 10 27 16 27C22 27 28 22 28 17C28 9 23 4 16 4Z" fill="url(#alien-skin)" stroke="#34D399" stroke-width="1.2"/><ellipse cx="11" cy="16" rx="4" ry="2.5" fill="url(#alien-eye)" stroke="#00F0FF" stroke-width="0.8" transform="rotate(-20 11 16)"/><ellipse cx="21" cy="16" rx="4" ry="2.5" fill="url(#alien-eye)" stroke="#00F0FF" stroke-width="0.8" transform="rotate(20 21 16)"/><circle cx="10" cy="15" r="1" fill="#FFFFFF"/><circle cx="22" cy="15" r="1" fill="#FFFFFF"/><circle cx="14.5" cy="21.5" r="0.4" fill="#064E3B"/><circle cx="17.5" cy="21.5" r="0.4" fill="#064E3B"/><path d="M14 23.5C15 24 17 24 18 23.5" stroke="#065F46" stroke-width="0.8" stroke-linecap="round"/></svg>`
+  },
+  {
+    id: 'monolith-alien',
+    name: '2001 Alien Monolith',
+    category: 'mysteries',
+    path: '/svgs/mysteries/monolith-alien.svg',
+    tags: ["monolith","2001","kubrick","black slab","cosmic mystery","alignment"],
+    description: `Inspired by Arthur C. Clarke and Stanley Kubrick's 2001: A Space Odyssey — a mysterious, featureless black slab left by an advanced cosmic intelligence to spark evolutionary leaps in sentinel species.`,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="16" cy="6" r="3" fill="#F59E0B" stroke="#D97706" stroke-width="0.6"/><path d="M2 28C6 24 26 24 30 28" stroke="#64748B" stroke-width="1.2"/><rect x="13" y="8" width="6" height="18" rx="0.5" fill="#030712" stroke="#475569" stroke-width="0.8"/><line x1="13" y1="8" x2="13" y2="26" stroke="#00F0FF" stroke-width="0.8" opacity="0.8"/><circle cx="16" cy="17" r="0.8" fill="#FFFFFF" opacity="0.6"/></svg>`
+  },
+  {
+    id: 'quantum-portal',
+    name: 'Quantum Star Gate',
+    category: 'mysteries',
+    path: '/svgs/mysteries/quantum-portal.svg',
+    tags: ["stargate","quantum portal","teleport","hexagonal","runes","portal","cyan"],
+    description: `A hypothetical Einstein-Rosen bridge or star gate mechanism utilizing exotic matter to stabilize a traversable wormhole, allowing instantaneous transit across galaxies.`,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="portal-vortex" cx="16" cy="16" r="12" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="30%" stop-color="#00F0FF"/><stop offset="70%" stop-color="#A855F7"/><stop offset="100%" stop-color="#0F172A"/></radialGradient></defs><polygon points="16,2 28,9 28,23 16,30 4,23 4,9" fill="#1E1B4B" stroke="#00F0FF" stroke-width="1.5"/><circle cx="16" cy="16" r="10" fill="url(#portal-vortex)"/><polygon points="16,7 23,11 23,21 16,25 9,21 9,11" stroke="#FFFFFF" stroke-width="0.8" fill="none" opacity="0.7"/><circle cx="16" cy="2" r="1.5" fill="#00F0FF"/><circle cx="28" cy="9" r="1.5" fill="#A855F7"/><circle cx="28" cy="23" r="1.5" fill="#EC4899"/><circle cx="16" cy="30" r="1.5" fill="#00F0FF"/><circle cx="4" cy="23" r="1.5" fill="#A855F7"/><circle cx="4" cy="9" r="1.5" fill="#EC4899"/></svg>`
+  },
+  {
+    id: 'alien-signal-wow',
+    name: 'Wow! Signal Waveform',
+    category: 'mysteries',
+    path: '/svgs/mysteries/alien-signal-wow.svg',
+    tags: ["wow signal","radio astronomy","seti","alien signal","waveform","frequency"],
+    description: `A strong 72-second narrow-band radio signal detected by Ohio State University's Big Ear telescope in 1977 from the Sagittarius constellation, bearing all expected hallmarks of an extraterrestrial transmission.`,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><path d="M2 16H8L10 4L13 28L16 2L19 29L22 10L24 16H30" stroke="#00F0FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><line x1="2" y1="16" x2="30" y2="16" stroke="#334155" stroke-width="0.8" stroke-dasharray="2 2"/><circle cx="16" cy="2" r="1.5" fill="#EC4899"/><circle cx="19" cy="29" r="1.5" fill="#FDE047"/></svg>`
+  },
+  {
+    id: 'space-time-singularity',
+    name: 'Cosmic Eye Singularity',
+    category: 'mysteries',
+    path: '/svgs/mysteries/space-time-singularity.svg',
+    tags: ["cosmic eye","god eye","helix nebula","singularity","eye","universe"],
+    description: `A poetic moniker for gravitational singularities and cosmic structures like the Helix Nebula ('Eye of God'), where extreme curvature of spacetime bends light into cosmic iris formations.`,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"><defs><radialGradient id="eye-iris" cx="16" cy="16" r="6" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="40%" stop-color="#00F0FF"/><stop offset="75%" stop-color="#A855F7"/><stop offset="100%" stop-color="#0F172A"/></radialGradient></defs><path d="M2 16C6 8 26 8 30 16C26 24 6 24 2 16Z" fill="#1E1B4B" stroke="#38BDF8" stroke-width="1.2"/><circle cx="16" cy="16" r="7" fill="url(#eye-iris)"/><circle cx="16" cy="16" r="3" fill="#030712"/><circle cx="14.8" cy="14.8" r="1" fill="#FFFFFF"/></svg>`
   }
 ];

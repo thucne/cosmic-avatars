@@ -12,7 +12,7 @@ export const SeoStructuredData: React.FC = () => {
     ],
     url: 'https://cosmic-avatars.a302.link',
     description:
-      'A cohesive library of 84 pixel-perfect vector space SVG icons and a deterministic user avatar generator built for web apps, user dashboards, and gaming platforms.',
+      'A cohesive library of 97 pixel-perfect vector space SVG icons and a deterministic user avatar generator built for web apps, user dashboards, and gaming platforms.',
     applicationCategory: 'DeveloperApplication',
     operatingSystem: 'Any',
     offers: {
@@ -36,8 +36,8 @@ export const SeoStructuredData: React.FC = () => {
       url: 'https://thucde.dev',
     },
     featureList: [
-      '84 Pixel-perfect 32x32 vector space SVG icons',
-      'Deterministic seed hashing via FNV-1a algorithm with 3,528 core artwork signatures (64,000+ styled variations)',
+      '97 Pixel-perfect 32x32 vector space SVG icons',
+      'Deterministic seed hashing via FNV-1a algorithm with 4,074 core artwork signatures (64,000+ styled variations)',
       'Client-side zero server load rendering',
       'Multi-format code exporter (Raw SVG, React JSX, Base64 Data URI, HTML img)',
       'Bulk export options (ZIP archive and SVG Sprite Sheet)',
@@ -57,7 +57,7 @@ export const SeoStructuredData: React.FC = () => {
         name: 'What is Cosmic Avatars?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Cosmic Avatars is an open-source space SVG icon library and deterministic user avatar generator. It includes 84 vector space icons and instantly creates reproducible, visually unique cosmic avatars for any seed string (username, email, or user ID) with zero server load.',
+          text: 'Cosmic Avatars is an open-source space SVG icon library and deterministic user avatar generator. It includes 97 vector space icons and instantly creates reproducible, visually unique cosmic avatars for any seed string (username, email, or user ID) with zero server load.',
         },
       },
       {
@@ -65,7 +65,7 @@ export const SeoStructuredData: React.FC = () => {
         name: 'How does deterministic avatar generation work?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Cosmic Avatars uses a high-speed FNV-1a non-cryptographic hash function to convert input seeds into a 32-bit integer. This hash predictably selects the base celestial icon, color palette, and orbital accents to generate 3,528 core artwork signatures (and 64,000+ styled variations with frame and theme controls) without requiring backend processing.',
+          text: 'Cosmic Avatars uses a high-speed FNV-1a non-cryptographic hash function to convert input seeds into a 32-bit integer. This hash predictably selects the base celestial icon, color palette, and orbital accents to generate 4,074 core artwork signatures (and 64,000+ styled variations with frame and theme controls) without requiring backend processing.',
         },
       },
       {

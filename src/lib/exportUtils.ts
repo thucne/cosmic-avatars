@@ -26,7 +26,7 @@ export async function downloadAllSvgsZip(icons: SpaceIcon[]): Promise<void> {
   const url = URL.createObjectURL(content);
   const link = document.createElement('a');
   link.href = url;
-  link.download = "cosmic-space-avatars-84-suite.zip";
+  link.download = "cosmic-space-avatars-97-suite.zip";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);

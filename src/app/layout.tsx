@@ -24,7 +24,7 @@ const firaCode = Fira_Code({
 const APP_URL = 'https://cosmic-avatars.a302.link';
 const TITLE = 'Cosmic Avatars — Deterministic Space SVG Icon Studio & Avatar Generator';
 const DESCRIPTION =
-  'A cohesive open-source library of 84 pixel-perfect vector space SVG icons (planets, nebulae, black holes, spacecraft, UFOs) with a deterministic seed avatar generator for React, Next.js, and modern web apps. Zero server load.';
+  'A cohesive open-source library of 97 pixel-perfect vector space SVG icons (planets, nebulae, black holes, spacecraft, UFOs) with a deterministic seed avatar generator for React, Next.js, and modern web apps. Zero server load.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(APP_URL),
